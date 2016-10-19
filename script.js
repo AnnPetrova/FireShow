@@ -19,25 +19,7 @@ $('.jquery-background-video').bgVideo({fadeIn: 2000});
     return false;
 });
 
-  /*$('.cloud9-item').click(function() {
-    if(flag1) {
-      flag1 = false;
-      $(this).animate({'width' : '200px', 'height' : '200px'}, 500);
-    } else {
-      flag1 = true;
-      $(this).animate({'width' : '150px', 'height' : '150px'}, 500);
-    }
-
-      return false;
-  });*/
-
-/*$('.cloud9-item').mousedown(function() {
-  $(this).animate({'width' : '300px', 'height' : '300px'}, 500);
-});*/
-
-
-
-
+  
 
 
 }

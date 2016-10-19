@@ -1,0 +1,122 @@
+body {
+  
+  background-color:   rgba(188, 143, 143, 1);
+    overflow-y: hidden;
+
+}
+.page-width h2 {
+    font-family: Okami;
+}
+
+
+
+
+
+#donebut {
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    font-size: 25px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    line-height: 40px;
+    background: rgba(0, 0, 0, .25);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+#donebut:hover {
+    color: rgba(188, 143, 143, 1);
+    background: rgba(0, 0, 0, .30);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: rgba(188, 143, 143, 1);
+}
+
+
+#nextbut{
+    position: relative;
+    top: 50%;
+    margin: auto;
+    margin-top: 20px;
+    float: left;
+    margin-left: 10px; 
+    border-radius: 50px;
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    color: #fff;
+    line-height: 40px;
+    background: rgba(0, 0, 0, .25);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+#nextbut:hover, #prevbut:hover {
+    color: rgba(188, 143, 143, 1);
+    background: rgba(0, 0, 0, .30);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+#prevbut{
+    position: relative;
+    top: 50%;
+    margin: auto;
+    margin-top: 20px;
+    float: left;
+    border-radius: 50px;
+    font-size: 25px;
+    text-align: center;
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    color: #fff;
+    line-height: 40px;
+    background: rgba(0, 0, 0, .25);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.wrap {
+    display: none;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+
+
+
+
+
+
+
+
+
