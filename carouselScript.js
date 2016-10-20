@@ -19,11 +19,12 @@ var main = function() {
 
 $('.cloud9-item').click(function() {
     var x = $(this).attr('id');
-    $('#' + x).animate({'width' : '200px', 'height' : '200px'}, 500);
+    /*$('#' + x).animate({'width' : '200px', 'height' : '200px'}, 500);
     $('#' + 'p' + x).fadeIn(500);
-    //$('#' + 'close' + x).fadeIn(100);
+    var str = document.getElementById('t' + x).innerHTML;
+    $('#kekylya').text(str);
     $('#' + 'blur' + x).animate({'width' : '200px', 'height' : '200px'});
-    $('#' + 'blur' + x).fadeIn(300);
+    $('#' + 'blur' + x).fadeIn(300);*/
     for(var i = 1; i < 15; i++) {
       if(x != i) {
         $('#' + i).animate({'width' : '150px', 'height' : '150px'}, 500);
@@ -31,8 +32,14 @@ $('.cloud9-item').click(function() {
         $('#' + 'blur' + i).animate({'width' : '150px', 'height' : '150px'});
         $('#' + 'blur' + i).fadeOut(300);
       }
-    } 
+    }
 });
+
+
+
+
+
+
 
 /*$('.close').click(function() {
     var x = $(this).attr('id');
@@ -43,6 +50,7 @@ $('.cloud9-item').click(function() {
     $('#' + 'blur' + y).fadeOut(300); 
 
 });*/
+
 
 
 

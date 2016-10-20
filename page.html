@@ -46,64 +46,78 @@
       <img class="cloud9-item" src="images/5.png" alt="Залупа" id="13">
       <img class="cloud9-item" src="images/1.png" alt="Говно" id="14">-->
 
-      <div class="logoin"><p>Fire Show</p></div>
+      <div class="logoin"><p id="kekylya">Fire Show</p></div>
 
       <div class="cloud9-item" style="background-image: url(images/5.png)" id="1">
         <div class ="blur" id="blur1" style="background-image: url(images/5.png)"></div>
           <a href="page.html" id="p1">new page</a>
+          <p class ="centerText" id="t1">Kek</p>
           <!--<button class="close" id="close1"> close </button>-->
       </div>
       <div class="cloud9-item" style="background-image: url(images/3.png)"  id="2">
         <div class ="blur" id="blur2" style="background-image: url(images/3.png)"></div>
         <a href="page.html" id="p2">new page</a>
+        <p class ="centerText" id="t2">KekHuek</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/1.png)"  id="3">
         <div class ="blur" id="blur3" style="background-image: url(images/1.png)"></div>
         <a href="page.html" id="p3">new page</a>
+        <p class ="centerText" id="t3">KekHu</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/5.png)" id="4">
         <div class ="blur" id="blur4" style="background-image: url(images/5.png)"></div>
-        <a id="p4">new page</a>
+        <a href="page.html" id="p4">new page</a>
+        <p class ="centerText" id="t4">Keuek</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/6.png)"  id="5">
         <div class ="blur" id="blur5" style="background-image: url(images/6.png)"></div>
-        <a id="p5">new page</a>
+        <a href="page.html" id="p5">new page</a>
+        <p class ="centerText" id="t5">KekHek</p>
       </div> 
       <div class="cloud9-item" style="background-image: url(images/3.png)"  id="6">
         <div class ="blur" id="blur6" style="background-image: url(images/3.png)"></div>
-        <a id="p6">new page</a>
+        <a href="page.html" id="p6">new page</a>
+        <p class ="centerText" id="t6">kHuek</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/1.png)" id="7">
         <div class ="blur" id="blur7" style="background-image: url(images/1.png)"></div>
-        <a id="p7">new page</a>
+        <a href="page.html" id="p7">new page</a>
+        <p class ="centerText" id="t7">KekHk</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/1.png)"  id="8">
         <div class ="blur" id="blur8" style="background-image: url(images/1.png)"></div>
-        <a id="p8">new page</a>
+        <a href="page.html" id="p8">new page</a>
+        <p class ="centerText" id="t8">Keuek</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/5.png)"  id="9">
         <div class ="blur" id="blur9" style="background-image: url(images/5.png)"></div>
-        <a id="p9">new page</a>
+        <a href="page.html" id="p9">new page</a>
+        <p class ="centerText" id="t9">ekHue</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/3.png)"  id="10">
         <div class ="blur" id="blur10" style="background-image: url(images/3.png)"></div>
-        <a id="p10">new page</a>
+        <a href="page.html" id="p10">new page</a>
+        <p class ="centerText" id="t10">Keue</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/6.png)"  id="11">
         <div class ="blur" id="blur11" style="background-image: url(images/6.png)"></div>
-        <a id="p11">new page</a>
+        <a href="page.html" id="p11">new page</a>
+        <p class ="centerText" id="t11">kHue</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/3.png)"  id="12">
         <div class ="blur" id="blur12" style="background-image: url(images/3.png)"></div>
-        <a id="p12">new page</a>
+        <a href="page.html" id="p12">new page</a>
+        <p class ="centerText" id="t12">KeHuk</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/5.png)"  id="13">
         <div class ="blur" id="blur13" style="background-image: url(images/5.png)"></div>
-        <a id="p13">new page</a>
+        <a href="page.html" id="p13">new page</a>
+        <p class ="centerText" id="t13">Kuek</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/1.png)"  id="14">
         <div class ="blur" id="blur14" style="background-image: url(images/1.png)"></div>
-        <a id="p14">new page</a>
+        <a href="page.html" id="p14">new page</a>
+        <p class ="centerText" id="t14">ekek</p>
       </div>
 
     </div>
@@ -138,14 +152,14 @@
         },*/
         buttonLeft: $("#nav > .left"),
         buttonRight: $("#nav > .right"),
-        autoPlay: 0,
-        autoPlayDelay: 1200,
+        autoPlay: 1,
+        autoPlayDelay: 1000,
         bringToFront: true,
         onRendered: rendered,
         onLoaded: function() {
           showcase.css( 'visibility', 'visible' )
           showcase.css( 'display', 'none' )
-          showcase.fadeIn( 1500 )
+          showcase.fadeIn( 2000 )
         }
       } )
 
@@ -155,6 +169,28 @@
         // Fade in based on proximity of the item
         var c = Math.cos((carousel.floatIndex() % 1) * 2 * Math.PI)
         title.css('opacity', 0.5 + (0.5 * c))
+
+        for(var i = 1; i < 15; i++) {
+          var index = document.getElementById(i).style.zIndex;
+            
+          if(index === '100') {
+            $('#' + i).animate({'width' : '200px', 'height' : '200px'}, 500);
+            $('#' + 'p' + i).fadeIn(500);
+            var str = document.getElementById('t' + i).innerHTML;
+            $('#kekylya').text(str);
+            $('#' + 'blur' + i).animate({'width' : '200px', 'height' : '200px'});
+            $('#' + 'blur' + i).fadeIn(300);
+
+            for(var j = 1; j < 15; j++) {
+              if(j !== i) {
+                $('#' + j).animate({'width' : '150px', 'height' : '150px'}, 500);
+                $('#' + 'p' + j).fadeOut(500);
+                $('#' + 'blur' + j).animate({'width' : '150px', 'height' : '150px'});
+                $('#' + 'blur' + j).fadeOut(300);
+              }
+            } 
+          }   
+        };
 
       }
 

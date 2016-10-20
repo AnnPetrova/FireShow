@@ -40,7 +40,7 @@
   margin: auto;
   text-align: center;
   display: none;
-  z-index: 100;
+  z-index: 300;
   width: 100%;
   height: 100%;
   font-size: 20px;
@@ -141,4 +141,9 @@
       /*background: #dfdfdf;
       border: solid 2px rgba(0, 0, 0, 0.6);
       box-shadow: none;*/
+    }
+
+
+    .centerText {
+      display: none;
     }
