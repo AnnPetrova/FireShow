@@ -1,6 +1,14 @@
 /**
  * Created by Евгений on 10/22/2016.
  */
+
+$(window).resize(function(){
+    $('#showcase').data('carousel').xRadius = $('#showcase').width()  / 2.3;
+    $('#showcase').data('carousel').xOrigin = $('#showcase').width()  * 0.5;
+    $('#showcase').data('carousel').render();
+
+});
+
 $(function() {
     var showcase = $("#showcase"), title = $('#item-title')
 
