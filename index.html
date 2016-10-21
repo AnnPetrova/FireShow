@@ -13,141 +13,138 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     <script src="JQuery/jquery-3.1.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="JQuery/tooltip.js"></script>
-    <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="JQuery/tooltip.js"></script>
     <script src="bootstrap-3.3.6-dist/js/bootstrap.js"></script>
     <script type="text/javascript" charset="utf-8" src="script.js"></script>
-    <script type="text/javascript" charset="utf-8" src="carouselScript.js"></script>
+    <!--<script type="text/javascript" charset="utf-8" src="carouselScript.js"></script>-->
+
+    
     
     <title>FireShow</title>
   </head>
 
   <body>
-   
-<!-- MENU -->
-    <nav class="menu" id="theMenu">
-      <div class="menu-wrap">
-        <h1 class="logo"><a href="homepage.html#home">up</a></h1>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About</a>
-        <a href="#contact">Contact</a>
-        <a href="https://www.facebook.com/sashka.osipov" target="_blank"><i class="fa fa-facebook"></i></a>
-        <a href="https://twitter.com/Fusionmeow" target="_blank"><i class="fa fa-twitter"></i></a>
-        <a href="https://vk.com/fusionqq" target="_blank"><i class="fa fa-vk"></i></a>
-        <a href="https://www.instagram.com/alexadrias" target="_blank"><i class="fa fa-instagram"></i></a>
+
+  <div class="container-fluid" id="Menu">
+      <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+          <div class="navbar-header">
+              <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                  <i class="fa fa-bars" ></i>
+              </button>
+          </div>
+
+          <div id="navbarCollapse" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                  <li><a href="index.html#home" id="name">Home</a></li>
+                  <li><a href="#" id="c">Services</a></li>
+                  <li class="dropdown">
+                      <a href="#galerea" class="dropdown-toggle" data-toggle="dropdown" id="c">Portfolio<b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#" id="d">1</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#" id="d">2</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#" id="d">3</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#contacts" id="c">Contacts</a></li>
+              </ul>
+          </div>
+      </nav>
+  </div>
+
+  <!-- VIDEO BACKGORUND -->
+  <div class="video-hero jquery-background-video-wrapper demo-video-wrapper" >
+      <video class="jquery-background-video" autoplay loop muted controls poster="images/5.png">
+          <source src="Bring Me The Horizon - Throne.mp4" type="video/mp4">
+      </video>
+
+      <div class="page-width">
+          <div class="video-hero--content">
+              <h2>Minsk Fire Show</h2>
+          </div>
       </div>
+  </div>
+  <button class="mutBut"></button>
 
-      <!-- Menu button -->
-      <div id="menuToggle"><i class="fa fa-bars"></i></div>
-    </nav>
-
-<!-- VIDEO BACKGORUND -->
-    <div class="video-hero jquery-background-video-wrapper demo-video-wrapper">
-        <video class="jquery-background-video" autoplay loop muted>
-            <source src="Bring Me The Horizon - Throne.mp4" type="video/mp4">
-        </video>
-        
-            <div class="page-width">
-                <div class="video-hero--content">
-                  <h2>Minsk Fire Show</h2>
-                </div>
-            </div>
-    </div>
-    <button class = "mutBut"></button>
 
 <!-- SLIDER -->
 
 <div class="wrap">
     <div id="showcase" class="noselect">
 
-      <!--<img class="cloud9-item" src="images/1.png" alt="Мудииииила" id="1">
-      <img class="cloud9-item" src="images/5.png" alt="Петух" id="2">
-      <img class="cloud9-item" src="images/6.png" alt="Еблан" id="3">
-      <img class="cloud9-item" src="images/5.png" alt="Член" id="4">
-      <img class="cloud9-item" src="images/1.png" alt="Шлюха" id="5">
-      <img class="cloud9-item" src="images/3.png" alt="Жопа" id="6">
-      <img class="cloud9-item" src="images/6.png" alt="Головка" id="7">
-      <img class="cloud9-item" src="images/5.png" alt="Блядина" id="8">
-      <img class="cloud9-item" src="images/3.png" alt="Хуй" id="9">
-      <img class="cloud9-item" src="images/6.png" alt="Давалка" id="10">
-      <img class="cloud9-item" src="images/3.png" alt="Хер" id="11">
-      <img class="cloud9-item" src="images/1.png" alt="Пенис" id="12">
-      <img class="cloud9-item" src="images/5.png" alt="Залупа" id="13">
-      <img class="cloud9-item" src="images/1.png" alt="Говно" id="14">-->
-
       <div class="logoin"><p id="kekylya">Fire Show</p></div>
 
       <div class="cloud9-item" style="background-image: url(images/5.png)" id="1">
         <div class ="blur" id="blur1" style="background-image: url(images/5.png)"></div>
           <a href="page.html" id="p1">new page</a>
-          <p class ="centerText" id="t1">Kek</p>
+          <p class ="centerText" id="t1">Какой-то текст 1</p>
           <!--<button class="close" id="close1"> close </button>-->
       </div>
       <div class="cloud9-item" style="background-image: url(images/3.png)"  id="2">
         <div class ="blur" id="blur2" style="background-image: url(images/3.png)"></div>
         <a href="page.html" id="p2">new page</a>
-        <p class ="centerText" id="t2">KekHuek</p>
+        <p class ="centerText" id="t2">Какой-то текст 2</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/1.png)"  id="3">
         <div class ="blur" id="blur3" style="background-image: url(images/1.png)"></div>
         <a href="page.html" id="p3">new page</a>
-        <p class ="centerText" id="t3">KekHu</p>
+        <p class ="centerText" id="t3">Какой-то текст 3</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/5.png)" id="4">
         <div class ="blur" id="blur4" style="background-image: url(images/5.png)"></div>
         <a href="page.html" id="p4">new page</a>
-        <p class ="centerText" id="t4">Keuek</p>
+        <p class ="centerText" id="t4">Какой-то текст 4</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/6.png)"  id="5">
         <div class ="blur" id="blur5" style="background-image: url(images/6.png)"></div>
         <a href="page.html" id="p5">new page</a>
-        <p class ="centerText" id="t5">KekHek</p>
+        <p class ="centerText" id="t5">Какой-то текст 5</p>
       </div> 
       <div class="cloud9-item" style="background-image: url(images/3.png)"  id="6">
         <div class ="blur" id="blur6" style="background-image: url(images/3.png)"></div>
         <a href="page.html" id="p6">new page</a>
-        <p class ="centerText" id="t6">kHuek</p>
+        <p class ="centerText" id="t6">Какой-то текст 6</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/1.png)" id="7">
         <div class ="blur" id="blur7" style="background-image: url(images/1.png)"></div>
         <a href="page.html" id="p7">new page</a>
-        <p class ="centerText" id="t7">KekHk</p>
+        <p class ="centerText" id="t7">Какой-то текст 7</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/1.png)"  id="8">
         <div class ="blur" id="blur8" style="background-image: url(images/1.png)"></div>
         <a href="page.html" id="p8">new page</a>
-        <p class ="centerText" id="t8">Keuek</p>
+        <p class ="centerText" id="t8">Какой-то текст 8</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/5.png)"  id="9">
         <div class ="blur" id="blur9" style="background-image: url(images/5.png)"></div>
         <a href="page.html" id="p9">new page</a>
-        <p class ="centerText" id="t9">ekHue</p>
+        <p class ="centerText" id="t9">Какой-то текст 9</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/3.png)"  id="10">
         <div class ="blur" id="blur10" style="background-image: url(images/3.png)"></div>
         <a href="page.html" id="p10">new page</a>
-        <p class ="centerText" id="t10">Keue</p>
+        <p class ="centerText" id="t10">Какой-то текст 10</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/6.png)"  id="11">
         <div class ="blur" id="blur11" style="background-image: url(images/6.png)"></div>
         <a href="page.html" id="p11">new page</a>
-        <p class ="centerText" id="t11">kHue</p>
+        <p class ="centerText" id="t11">Какой-то текст 11</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/3.png)"  id="12">
         <div class ="blur" id="blur12" style="background-image: url(images/3.png)"></div>
         <a href="page.html" id="p12">new page</a>
-        <p class ="centerText" id="t12">KeHuk</p>
+        <p class ="centerText" id="t12">Какой-то текст 12</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/5.png)"  id="13">
         <div class ="blur" id="blur13" style="background-image: url(images/5.png)"></div>
         <a href="page.html" id="p13">new page</a>
-        <p class ="centerText" id="t13">Kuek</p>
+        <p class ="centerText" id="t13">Какой-то текст 13</p>
       </div>
       <div class="cloud9-item" style="background-image: url(images/1.png)"  id="14">
         <div class ="blur" id="blur14" style="background-image: url(images/1.png)"></div>
         <a href="page.html" id="p14">new page</a>
-        <p class ="centerText" id="t14">ekek</p>
+        <p class ="centerText" id="t14">Какой-то текст 14</p>
       </div>
 
     </div>
@@ -163,6 +160,89 @@
 
   </div>
 
+  <!-- content -->
+  <div>
+      <div class="container">
+
+          <div class="titleNews" style="margin-bottom: 30px ">
+                  Новости
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+              <a href="#news1">
+                  <div class="thumbnail thumb-shadow news">
+                      <img src="images/5.png">
+                      <div class="caption div-on-image" style="position: relative">
+                          <h3>
+                              Новость
+                          </h3>
+                          <div class="wrap">
+                              <p>
+                                 Какой-то текст
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <a href="#news2">
+                  <div class="thumbnail thumb-shadow news">
+                      <img src="images/5.png">
+                      <div class="caption div-on-image" style="position: relative">
+                          <h3>
+                              Новость
+                          </h3>
+                          <div class="wrap">
+                              <p>
+                                  Какой-то текст
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+      </div>
+      <div class="container">
+
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <a href="#news3">
+                  <div class="thumbnail thumb-shadow news">
+                      <img src="images/5.png">
+                      <div class="caption div-on-image" style="position: relative">
+                          <h3>
+                              Новость
+                          </h3>
+                          <div class="wrap">
+                              <p>
+                                  Какой-то текст
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <a href="#news4">
+                  <div class="thumbnail thumb-shadow news">
+                      <img src="images/5.png">
+                      <div class="caption div-on-image" style="position: relative">
+                          <h3>
+                              Новость
+                          </h3>
+                          <div class="wrap">
+                              <p>
+                                  Какой-то текст
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+      </div>
+  </div>
+
+
+
   <script src="JQuery/jquery.background-video.js" ></script>
   <script src="JQuery/jquery.reflection.js"></script>
   <script src="JQuery/jquery.cloud9carousel.js"></script>
@@ -173,9 +253,12 @@
       var showcase = $("#showcase"), title = $('#item-title')
 
       showcase.Cloud9Carousel( {
-        yOrigin: 50,
-        yRadius: 100,
+
+        yRadius: 120,
+
         mouseWheel: true,
+        fps: 100,
+        speed: 10,
         /*mirror: {
           gap: 12,
           height: 0.2
@@ -183,13 +266,13 @@
         buttonLeft: $("#nav > .left"),
         buttonRight: $("#nav > .right"),
         autoPlay: 1,
-        autoPlayDelay: 1000,
+        autoPlayDelay: 1500,
         bringToFront: true,
         onRendered: rendered,
         onLoaded: function() {
           showcase.css( 'visibility', 'visible' )
           showcase.css( 'display', 'none' )
-          showcase.fadeIn(500)
+          showcase.fadeIn(1200)
 
         }
       } )
@@ -221,7 +304,7 @@
                 $('#' + 'blur' + j).animate({'width' : '150px', 'height' : '150px'});
                 $('#' + 'blur' + j).fadeOut(300);
               }
-            } 
+            }
           }   
         };
 
@@ -253,6 +336,16 @@
     
 
   </body>
+<footer>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <p class="rights">
+            Copyright &#169; <span id="copyright-year">2016</span>
+            <br>
+            blablaFireshow.by. All Rights Reserved
+            <!--<a href="privacy.html">Privacy Policy</a>-->
+        </p>
+    </div>
+</footer>
 </html>
 
 

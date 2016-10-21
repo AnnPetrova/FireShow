@@ -16,7 +16,6 @@ var main = function() {
   $(this).animate({'width' : '300px', 'height' : '300px'}, 500);
 });*/
 
-
 $('.cloud9-item').click(function() {
     var x = $(this).attr('id');
     /*$('#' + x).animate({'width' : '200px', 'height' : '200px'}, 500);

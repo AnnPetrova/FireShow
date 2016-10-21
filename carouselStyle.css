@@ -1,29 +1,35 @@
-/* CAROUSEL */ 
+/* CAROUSEL */
 
-@font-face { 
-    font-family: Okami; 
+@font-face {
+    font-family: Okami;
     src: url(Font/Okami.otf);
 }
 
 .wrap {
-    
+  width: 100%;
+    height: 50%;
+  margin: 0;
 }
- #showcase {
+
+#showcase {
     padding-top: 50px;
-    margin: auto;
+    margin: 0;
     position: relative;
-    height: 450px;
-    width: 900px;   
+    height: 600px;
+    width: 100%;
 }
 
 .logoin {
-  position: absolute;
-  left: 350px;
-  top: 135px;
-  font-size: 50px;
-  font-weight: 500;
-  color: white;
-  font-family: Okami;
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    top: 145px;
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+    font-family: Okami;
+    text-align: center;
+    width: 70%;
 }
 
 .cloud9-item {
@@ -36,77 +42,76 @@
 }
 
 .cloud9-item > a {
-  position: absolute;
-  margin: auto;
-  text-align: center;
-  display: none;
-  z-index: 300;
-  width: 100%;
-  height: 100%;
-  font-size: 20px;
-  font-weight: 500;
-  cursor: pointer;
-  color: black;
-  text-decoration: none;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    display: none;
+    z-index: 300;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
 }
 
 .blur {
- height: 150px;
-  width: 150px;
-  border-radius: 2000px;
-  border: 0;
-   background-position: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 2000px;
+    border: 0;
+    background-position: center;
     position: absolute;
     z-index: 99;
     -webkit-filter: blur(3px);
     -moz-filter: blur(3px);
-    filter: blur(3px); 
+    filter: blur(3px);
     display: none;
 }
 
 .close {
-  
-  display: none;
-  z-index: 100;
- position: relative;
+
+    display: none;
+    z-index: 100;
+    position: relative;
 }
 
+#item-title {
+    color: white;
+    font-size: 29px;
+    letter-spacing: 0.13em;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 22px;
+    z-index: 100;
+}
 
+#nav {
+    z-index: 100;
+    text-align: center;
+    margin-bottom: 50px;
+}
 
+#nav > button {
+    /*width: 64px;
+    height: 36px;
+    color: #666;
+    font: bold 16px arial;
+    text-align: center;
+    margin: 5px;
+    text-shadow: 0px 1px 0px #f5f5f5;
+    background: #f6f6f6;
+    border: solid 2px rgba(0, 0, 0, 0.4);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.4);
+    cursor: pointer;*/
 
-    #item-title {
-      color: white;
-      font-size: 29px;
-      letter-spacing: 0.13em;
-      text-align: center;
-      margin-top: 30px;
-      margin-bottom: 22px;
-      z-index: 100;
-    }
-    #nav {
-        z-index: 100;
-      text-align: center;
-      margin-bottom: 50px;
-    }
-    #nav > button {
-      /*width: 64px;
-      height: 36px;
-      color: #666;
-      font: bold 16px arial;
-      text-align: center;
-      margin: 5px;
-      text-shadow: 0px 1px 0px #f5f5f5;
-      background: #f6f6f6;
-      border: solid 2px rgba(0, 0, 0, 0.4);
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      border-radius: 5px;
-      -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.4);
-      -moz-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.4);
-      box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.4);
-      cursor: pointer;*/
-
-      text-align: center;
+    text-align: center;
     font-size: 16px;
     color: #fff;
     width: 45px;
@@ -117,9 +122,9 @@
     border-radius: 50px;
     outline: none;
     border: 0;
-    }
+}
 
-    #nav > button:hover i {
+#nav > button:hover i {
     color: red;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
@@ -128,7 +133,7 @@
     transition: all .2s ease-in-out;
 }
 
-    #nav > button:hover {
+#nav > button:hover {
     background: rgba(0, 0, 0, 0.9);
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
@@ -136,14 +141,14 @@
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
-    #nav > button:active,
-    #nav > button.down {
-      /*background: #dfdfdf;
-      border: solid 2px rgba(0, 0, 0, 0.6);
-      box-shadow: none;*/
-    }
 
+#nav > button:active,
+#nav > button.down {
+    /*background: #dfdfdf;
+    border: solid 2px rgba(0, 0, 0, 0.6);
+    box-shadow: none;*/
+}
 
-    .centerText {
-      display: none;
-    }
+.centerText {
+    display: none;
+}

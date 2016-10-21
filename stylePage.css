@@ -1,18 +1,26 @@
 body {
   
   background-color:   rgba(188, 143, 143, 1);
-    overflow-y: hidden;
+   
 
 }
 .page-width h2 {
     font-family: Okami;
 }
 
-
+.wrap1 {
+  position: fixed;
+  top: 150px;
+  left: auto;
+  display: none;
+}
 
 
 
 #donebut {
+    position: fixed;
+    right: 20px;
+    top: 20px;
     margin: auto;
     margin-bottom: 30px;
     border-radius: 50px;
@@ -104,11 +112,13 @@ body {
     transition: all .2s ease-in-out;
 }
 
-.wrap {
-    display: none;
-    width: 100%;
-    margin: auto;
-    padding: auto;
+.contentik {
+    margin-top: 2000px;
+}
+
+
+.contenti {
+    margin-top: 1000px;
 }
 
 

@@ -33,8 +33,10 @@ var main = function() {
 	});*/
 
 $('#donebut').click(function() {
-	$('.wrap').fadeIn(500);
+	$('.wrap1').fadeIn(500);
 	$('.content').animate({'opacity' : '0'}, 500);
+	$('.contentik').animate({'opacity' : '0'}, 500);
+	$('.contenti').animate({'opacity' : '0'}, 500);
 	$('#donebut').animate({'opacity' : '0'}, 500);
 })
 

@@ -15,34 +15,39 @@ body {
     background-size: cover;   
 }
 
-/* VIDEO BACKGROUND*/
-/*.demo-video-wrapper {
-	background-image: url(https://d3k5xyayaartr5.cloudfront.net/_assets/home-video/beach-waves-loop.jpg);
-}*/
-
-
-/*.blur {
-   position: relative;
-    left:0;
-    right:0;
-    background-color: rgba(0, 0, 0, 0.9);
-    height: 100%;
+footer{
+    min-height: 5%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.75;
+    padding-top: 3%;
+    margin-top: 5%;
     width: 100%;
-    border-radius: 0;
-    border: 0;
-}*/
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
 
+.titleNews{
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.75;
+    margin-left: 0;
+    margin-right: 0;
+}
 
-/*.video-overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	pointer-events: none; /
-	background: url($overlay_pattern) left top repeat;
-  opacity: $overlay_opacity;
-}*/
+.news{
+	background-color: rgba(0, 0, 0, 0.75);
+	color: white;
+}
+.container{
+	color: white;
+}
+
 .video-hero--content {
 	position: relative;
 	text-align: center;
@@ -61,6 +66,7 @@ body {
 
 
 .jquery-background-video-wrapper {
+
 	position: relative;
 	overflow: hidden;
 	background-position: center center;
@@ -144,9 +150,9 @@ body {
   border: 0;
   cursor: pointer;
   outline: none;
-  position: fixed;
+  position: absolute;
   right: 15px;
-  top: 15px;
+  top: 60px;
 }
 
 .mutBut:active {
@@ -155,135 +161,39 @@ body {
  3px 3px 5px rgba(0,0,0,0.5);
 }
 
+.navbar-inverse {
+    background-color: rgba(0,0,0,0.5);
+    border: 0;
+}
 
+.dropdown-menu {
+    background-color: rgba(0,0,0,0.5);
+    border: 0;
 
-/* MENU */
-a:hover, a:focus {
+}
+
+.dropdown-menu>li>a{
+    color: #de1100;;
+}
+
+.dropdown-menu>li>a:hover {
+    color: #fff;
     text-decoration: none;
-    outline: 0;
+    background-color: rgba(0,0,0,0.7);
 }
 
-.menu {
-    position: fixed;
-    left: -200px;
-    width: 260px;
-    height: 100%;
-    top: 0;
-    z-index: 10;
-    text-align: left;
-    -webkit-transition: left .3s ease;
-    -moz-transition: left .3s ease;
-    -ms-transition: left .3s ease;
-    -o-transition: left .3s ease;
-    transition: left .3s ease;
+.dropdown-menu {
+    background-color: rgba(0,0,0,0.7);
+    border: 0;
+
 }
 
-.menu h1.logo a {
-    font-family: Raleway, Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 800;
-    letter-spacing: .15em;
-    line-height: 40px;
-    text-transform: uppercase;
+.dropdown-menu>li>a{
+    color: #9d9d9d;
+}
+
+.dropdown-menu>li>a:hover {
     color: #fff;
-    margin-top: 20px;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.7);
 }
-
-.menu h1.logo a:hover {
-    color: red;
-}
-
-.menu h1.logo a:active {
-    color: red;
-}
-
-.menu a {
-    margin-left: 20px;
-    color: gray;
-    display: block;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-}
-
-.menu a:hover {
-    color: #fff;
-}
-
-.menu a:active {
-    color: #fff;
-}
-
-.menu a > i {
-    float: left;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: left;
-    color: gray;
-    width: 30px;
-    font-size: 17px;
-    line-height: 40px;
-    margin: 20px 2px;
-    -webkit-transition: color .2s ease-in;
-    -moz-transition: color .2s ease-in;
-    -ms-transition: color .2s ease-in;
-    -o-transition: color .2s ease-in;
-    transition: color .2s ease-in;
-}
-
-.menu a > i:hover {
-    color: red;
-}
-
-.menu a > i:active {
-    color: red;
-}
-
-.menu-open {
-    left: 0;
-}
-
-.menu-wrap {
-    position: absolute;
-    top: 0;
-    right: 60px;
-    background: #1a1a1a;
-    width: 200px;
-    height: 100%
-}
-
-#menuToggle {
-    position: absolute;
-    top: 15px;
-    right: 0;
-    z-index: 11;
-    display: block;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 16px;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    cursor: pointer;
-    background: rgba(0, 0, 0, .25);
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-
-#menuToggle:hover {
-    color: red;
-    background: rgba(0, 0, 0, .30);
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-
-
