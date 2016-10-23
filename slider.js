@@ -1,19 +1,70 @@
-
-$(window).resize(function(){
-    $('#showcase').data('carousel').xRadius = $('#showcase').width()  / 2.3;
-    $('#showcase').data('carousel').xOrigin = $('#showcase').width()  * 0.5;
-    $('#showcase').data('carousel').yOrigin = $('#showcase').height() * 0.1;
-    $('#showcase').data('carousel').yRadius = $('#showcase').height() / 6;
-    $('#showcase').data('carousel').render();
+$(window).resize(function () {
+    var docWidth = $(document).width();
+    helpToResize(docWidth);
 
 });
 
-$(function() {
+function helpToResize(docWidth){
+    var maxHei = $('#t3').height();
+    var circlePar = 0.85;
+    var topParam = 0.7;
+
+    var k = 1;
+    for (var i = 1; i < 15; i++) {
+        if ($('#t' + i).height() > maxHei) {
+            maxHei = $('#t' + i).height();
+            k = i;
+        }
+    }
+    $('#showcase').css('padding-top', (maxHei * 0.45));
+
+    $('#showcase').height(maxHei + 350);
+
+    if (docWidth <= 1200 && docWidth > 1000) {
+        circlePar = 0.55;
+        topParam = 0.75;
+    }
+    else if (docWidth > 800 && docWidth < 1000) {
+        circlePar = 0.45;
+        topParam = 0.35;
+        $('#showcase').css('padding-top', (maxHei * 0.2));
+        $('#showcase').height(maxHei + 150);
+    }
+    else if (docWidth >= 600 && docWidth < 800) {
+        circlePar = 0.43;
+        topParam = 0.39;
+        $('#showcase').css('padding-top', (maxHei * 0.2));
+        $('.logo').css('right', docWidth * 0.26);
+    }
+    else if (docWidth <= 1800 && docWidth > 1350) {
+        circlePar = 0.72;
+        topParam = 0.75;
+    }
+    else if (docWidth <= 2100 && docWidth > 1800) {
+        circlePar = 0.6;
+        topParam = 0.8;
+    }
+    else if (docWidth > 2100) {
+        circlePar = 0.6;
+        topParam = 0.8;
+    }
+
+//    $('#showcase').css('padding-top', (maxHei * 0.45));
+    $('.logoin').css('top', maxHei * topParam);
+
+    $('#showcase').data('carousel').xRadius = $('#showcase').width() / 2;
+    $('#showcase').data('carousel').xOrigin = $('#showcase').width() * 0.5;
+    $('#showcase').data('carousel').yOrigin = $('#showcase').height() * 0.1;
+    $('#showcase').data('carousel').yRadius = maxHei * circlePar;
+}
+
+$(function () {
     var showcase = $("#showcase"), title = $('#item-title')
 
-    showcase.Cloud9Carousel( {
 
-        yRadius: 250,
+    showcase.Cloud9Carousel({
+
+        yRadius:220 ,
 
         mouseWheel: true,
         fps: 100,
@@ -28,65 +79,79 @@ $(function() {
         autoPlayDelay: 1500,
         bringToFront: true,
         onRendered: rendered,
-        onLoaded: function() {
-            showcase.css( 'visibility', 'visible' )
-            showcase.css( 'display', 'none' )
+        onLoaded: function () {
+            showcase.css('visibility', 'visible')
+            showcase.css('display', 'none')
             showcase.fadeIn(1200)
 
         }
-    } )
+    })
+    function rendered(carousel) {
 
-    function rendered( carousel ) {
-        title.text( carousel.nearestItem().element.alt )
+
+        title.text(carousel.nearestItem().element.alt);
 
         // Fade in based on proximity of the item
-        var c = Math.cos((carousel.floatIndex() % 1) * 2 * Math.PI)
-        title.css('opacity', 0.5 + (0.5 * c))
+        var c = Math.cos((carousel.floatIndex() % 1) * 2 * Math.PI);
+        title.css('opacity', 0.5 + (0.5 * c));
+
+        var docWidth = $(document).width();
+        var circleParam = 250;
+
+        helpToResize(docWidth);
 
 
+        if (docWidth <= 1200 && docWidth > 500)
+            circleParam = docWidth * 0.2;
+        else if (docWidth <= 600)
+            circleParam = docWidth * 0.3;
 
-        for(var i = 1; i < 15; i++) {
+        for (var i = 1; i < 15; i++) {
             var index = document.getElementById(i).style.zIndex;
 
-            if(index === '100') {
-                $('#' + i).animate({'width' : '200px', 'height' : '200px'}, 500);
+
+            if (index === '100') {
+                $('#' + i).animate({'width': circleParam, 'height': circleParam}, 500);
                 $('#' + 'p' + i).fadeIn(500);
                 var str = document.getElementById('t' + i).innerHTML;
                 $('#kekylya').text(str);
-                $('#' + 'blur' + i).animate({'width' : '200px', 'height' : '200px'});
+                $('#' + 'blur' + i).animate({'width': circleParam, 'height': circleParam});
                 $('#' + 'blur' + i).fadeIn(300);
 
-                for(var j = 1; j < 15; j++) {
-                    if(j !== i) {
-                        $('#' + j).animate({'width' : '150px', 'height' : '150px'}, 500);
+                for (var j = 1; j < 15; j++) {
+                    if (j !== i) {
+                        $('#' + j).animate({'width': circleParam * 0.7, 'height': circleParam * 0.7}, 500);
                         $('#' + 'p' + j).fadeOut(500);
-                        $('#' + 'blur' + j).animate({'width' : '150px', 'height' : '150px'});
+                        $('#' + 'blur' + j).animate({'width': circleParam * 0.7, 'height': circleParam * 0.7});
                         $('#' + 'blur' + j).fadeOut(300);
                     }
                 }
             }
-        };
+        }
+        ;
 
     }
 
     //
     // Simulate physical button click effect
     //
-    $('#nav > button').click( function( e ) {
-        var b = $(e.target).addClass( 'down' )
-        setTimeout( function() { b.removeClass( 'down' ) }, 80 )
-    } )
+    $('#nav > button').click(function (e) {
+        var b = $(e.target).addClass('down');
+        setTimeout(function () {
+            b.removeClass('down')
+        }, 80);
+    })
 
-    $(document).keydown( function( e ) {
-        switch( e.keyCode ) {
+    $(document).keydown(function (e) {
+        switch (e.keyCode) {
             /* left arrow */
             case 37:
-                $('#nav > .left').click()
-                break
+                $('#nav > .left').click();
+                break;
 
             /* right arrow */
             case 39:
-                $('#nav > .right').click()
+                $('#nav > .right').click();
         }
-    } )
+    })
 })
