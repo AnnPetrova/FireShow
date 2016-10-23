@@ -1,13 +1,11 @@
-body {
-  
-  background-color:   rgba(188, 143, 143, 1);
-   
 
-}
 .page-width h2 {
     font-family: Okami;
 }
 
+body {
+    background-color: #eeeeee;
+}
 
 #donebut {
     position: fixed;
