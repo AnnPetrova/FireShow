@@ -6,7 +6,7 @@ $(function() {
 
     showcase.Cloud9Carousel( {
 
-        yRadius: 120,
+        yRadius: 250,
 
         mouseWheel: true,
         fps: 100,
