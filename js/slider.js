@@ -1,7 +1,6 @@
 $(window).resize(function () {
     var docWidth = $(document).width();
     helpToResize(docWidth);
-
 });
 
 function helpToResize(docWidth){
@@ -66,7 +65,7 @@ $(function () {
 
         yRadius:220 ,
 
-        mouseWheel: true,
+        mouseWheel: false,
         fps: 100,
         speed: 10,
         /*mirror: {

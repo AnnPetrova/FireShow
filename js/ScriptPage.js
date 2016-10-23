@@ -33,19 +33,13 @@ var main = function () {
      });*/
 
     $('#donebut').click(function () {
-        if ($('.wrap').css('display') == 'none'){
-            $('.wrap').css('display','block');
-            $('#content').css('display','none');
-          //  $('.wrap1').fadeIn(500);
-/*            $('.content').animate({'opacity': '0'}, 500);
-            $('.contentik').animate({'opacity': '0'}, 500);
-            $('.contenti').animate({'opacity': '0'}, 500);*/
+        if ($('.wrap1').css('display') == 'none'){
+            $('.wrap1').css('display','block');
         }
         else{
-            $('.wrap').css('display','none');
-            $('#content').css('display','block');
+            $('.wrap1').css('display','none');
         }
-    })
+    });
 
 
 };

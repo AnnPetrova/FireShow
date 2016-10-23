@@ -1,17 +1,17 @@
 
 
 footer {
-    min-height: 5%;
     background-color: rgb(0, 0, 0);
     opacity: 0.75;
-    padding-top: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     margin-top: 5%;
     width: 100%;
     overflow: hidden;
     text-align: center;
     color: white;
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 100;
 }
 
 
@@ -21,17 +21,21 @@ footer {
 }
 
 .dropdown-menu {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(222, 17, 0, 0.85);
     border: 0;
+}
 
+.dropdown-menu li{
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .dropdown-menu > li > a {
-    color: #de1100;;
+    color: #ffffff;
 }
 
 .dropdown-menu > li > a:hover {
-    color: #fff;
+    color: #de1100;
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.7);
 }
@@ -39,15 +43,4 @@ footer {
 .dropdown-menu {
     background-color: rgba(0, 0, 0, 0.7);
     border: 0;
-
-}
-
-.dropdown-menu > li > a {
-    color: #9d9d9d;
-}
-
-.dropdown-menu > li > a:hover {
-    color: #fff;
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.7);
 }

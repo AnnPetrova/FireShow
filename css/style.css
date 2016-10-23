@@ -1,8 +1,6 @@
-/* MAIN */
-
 @font-face {
     font-family: Okami;
-    src: url(Font/Okami.otf);
+    src: url(../Font/Okami.otf);
 }
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
@@ -12,13 +10,38 @@
 }
 
 body {
-    background-image: url(Download-fire-wallpaper-HD-backgrounds.jpg);
+    background-image: url(../images/Download-fire-wallpaper-HD-backgrounds.jpg);
     background-size: cover;
 }
 
 .thumbnail .caption {
     padding: 9px;
     color: rgba(255, 255, 255, 0);
+}
+
+ul{
+    list-style: none;
+}
+
+.item{
+    color: white;
+    text-align: justify;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    margin: 1% 0 1%;
+
+}
+
+.item a{
+    color: white;
+}
+
+.item a:hover{
+    color: #f72e39;
+}
+
+.image{
+    vertical-align: middle;
 }
 
 .titleNews {
@@ -143,7 +166,7 @@ body {
 }
 
 .mutBut {
-    background: url(kek.png);
+    background: url(../images/kek.png);
     background-size: 100%;
     border-radius: 20px;
     height: 35px;
