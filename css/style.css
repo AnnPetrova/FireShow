@@ -44,17 +44,6 @@ ul{
     vertical-align: middle;
 }
 
-.titleNews {
-    color: white;
-    text-align: center;
-    font-size: 26px;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    opacity: 0.75;
-    margin-left: 0;
-    margin-right: 0;
-}
-
 .news {
     background-color: rgba(0, 0, 0, 0.75);
     color: white;

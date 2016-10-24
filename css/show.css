@@ -1,9 +1,47 @@
-.description-text{
-    font-family: Consolas;
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+.item{
+    font-family: Calibri;
     font-size: 16px;
     text-align: justify;
 }
+body {
+    background-image: url(../images/Download-fire-wallpaper-HD-backgrounds.jpg);
+    background-size: cover;
+}
 
-p{
-    text-indent: 20px;
+.news {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+.container {
+    margin-top: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.titleArticle {
+    margin-top: 10%;
+    color: white;
+    text-align: center;
+    font-size: 26px;
+}
+
+.image{
+    padding: 10px 5px 10px;
+    text-align: center;
+}
+
+.article{
+    text-align: left;
+    font-size: 22px;
+    text-decoration: underline;
+    padding: 15px;
+    text-decoration-color: #de1100;
+}
+
+.newsElement{
+    margin-top: 15px;
+    text-align: center;
 }

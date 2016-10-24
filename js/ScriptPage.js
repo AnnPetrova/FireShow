@@ -49,9 +49,12 @@ $('#donebut').click(function() {
   if(flag2) {
     flag2 = false;
     $('.wrap1').animate({'opacity' : '1'}, 500);
+    $('.content').animate({'opacity' : '0'}, 500);
+
   } else {
     flag2 = true;
     $('.wrap1').animate({'opacity' : '0'}, 500);
+    $('.content').animate({'opacity' : '1'}, 500);
   }
     return false;
 });
