@@ -1,9 +1,21 @@
 $(window).resize(function () {
     var docWidth = $(document).width();
-    helpToResize(docWidth);
+    //var h = showcase.Cloud9Carousel.yRadius;
+    //console.log(h);
+
+    //var h = parseInt($('#showcase').height()) - parseInt($("#showcase").css('padding-top'));
+    //var h2 = (h / 2);
+    
+    //helpToResize(docWidth);
+    $('#showcase').data('carousel').xRadius = $('#showcase').width() / 2;
+    $('#showcase').data('carousel').xOrigin = $('#showcase').width() * 0.5;
+    $('#showcase').data('carousel').yOrigin = $('#showcase').height() * 0.1;
+    $('#showcase').data('carousel').yRadius = $('#showcase').height() / 6;
+    var h = $('#showcase').data('carousel').yRadius;
+    $('.logoin').css('top', h);
 });
 
-function helpToResize(docWidth){
+/*function helpToResize(docWidth){
     var maxHei = $('#t3').height();
     var circlePar = 0.85;
     var topParam = 0.7;
@@ -55,15 +67,13 @@ function helpToResize(docWidth){
     $('#showcase').data('carousel').xOrigin = $('#showcase').width() * 0.5;
     $('#showcase').data('carousel').yOrigin = $('#showcase').height() * 0.1;
     $('#showcase').data('carousel').yRadius = maxHei * circlePar;
-}
+}*/
 
 $(function () {
-    var showcase = $("#showcase"), title = $('#item-title')
+    var showcase = $("#showcase"), title = $('#item-title');
 
 
     showcase.Cloud9Carousel({
-
-        yRadius:220 ,
 
         mouseWheel: false,
         fps: 100,
@@ -87,6 +97,13 @@ $(function () {
     })
     function rendered(carousel) {
 
+    $('#showcase').data('carousel').xRadius = $('#showcase').width() / 2;
+    $('#showcase').data('carousel').xOrigin = $('#showcase').width() * 0.5;
+    $('#showcase').data('carousel').yOrigin = $('#showcase').height() * 0.1;
+    $('#showcase').data('carousel').yRadius = $('#showcase').height() / 6;
+    var h = $('#showcase').data('carousel').yRadius;
+    $('.logoin').css('top', h);
+
 
         title.text(carousel.nearestItem().element.alt);
 
@@ -97,7 +114,7 @@ $(function () {
         var docWidth = $(document).width();
         var circleParam = 250;
 
-        helpToResize(docWidth);
+        //helpToResize(docWidth);
 
 
         if (docWidth <= 1200 && docWidth > 500)
@@ -107,8 +124,6 @@ $(function () {
 
         for (var i = 1; i < 15; i++) {
             var index = document.getElementById(i).style.zIndex;
-
-
             if (index === '100') {
                 $('#' + i).animate({'width': circleParam, 'height': circleParam}, 500);
                 $('#' + 'p' + i).fadeIn(500);
@@ -126,8 +141,7 @@ $(function () {
                     }
                 }
             }
-        }
-        ;
+        };
 
     }
 

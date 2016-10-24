@@ -32,14 +32,29 @@ var main = function () {
      "animation-delay": "0s"});
      });*/
 
-    $('#donebut').click(function () {
+    /*$('#donebut').click(function () {
         if ($('.wrap1').css('display') == 'none'){
             $('.wrap1').css('display','block');
         }
         else{
             $('.wrap1').css('display','none');
         }
-    });
+    });*/
+
+
+
+var flag2 = new Boolean(true);
+
+$('#donebut').click(function() {
+  if(flag2) {
+    flag2 = false;
+    $('.wrap1').animate({'opacity' : '1'}, 500);
+  } else {
+    flag2 = true;
+    $('.wrap1').animate({'opacity' : '0'}, 500);
+  }
+    return false;
+});
 
 
 };
