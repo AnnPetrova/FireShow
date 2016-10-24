@@ -29,8 +29,11 @@ body {
 }
 
 .image{
-    padding: 10px 5px 10px;
-    text-align: center;
+    text-align: justify;
+}
+
+.text{
+    text-align: justify;
 }
 
 .article{
@@ -42,6 +45,5 @@ body {
 }
 
 .newsElement{
-    margin-top: 15px;
     text-align: center;
 }

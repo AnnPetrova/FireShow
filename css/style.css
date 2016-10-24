@@ -41,8 +41,42 @@ ul{
 }
 
 .image{
-    vertical-align: middle;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+    margin-left: 0;
 }
+.text{
+    padding-left: 20px;
+}
+@media screen and (max-width: 1200px) {
+
+    .text{
+        padding-left: 50px;
+        padding-bottom: 20px;
+    }
+
+    .image{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+
+    .text{
+        padding-left: 0px;
+        padding-bottom: 20px;
+    }
+
+    .image{
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+}
+
 
 .news {
     background-color: rgba(0, 0, 0, 0.75);
