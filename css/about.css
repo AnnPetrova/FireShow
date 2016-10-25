@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+@font-face {
+    font-family: inglobal;
+    src: url(../Font/TTF/inglobal.ttf);
+}
+
+p{
+    text-indent: 20px;
+}

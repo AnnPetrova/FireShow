@@ -12,13 +12,13 @@ $(window).resize(function () {
         }
     }
     //console.log($('#t4').height());
-    //console.log(maxHei);
-    //console.log(k);
+    console.log(maxHei);
+    console.log(k);
     
     $('#showcase').data('carousel').xRadius = $('#showcase').width() / 2;
     $('#showcase').data('carousel').xOrigin = $('#showcase').width() * 0.5;
     $('#showcase').data('carousel').yOrigin = $('#showcase').height() * 0.1;
-    $('#showcase').data('carousel').yRadius = $('#showcase').height() / 2.8;
+    $('#showcase').data('carousel').yRadius = maxHei * 0.85;
     //var h = $('#showcase').data('carousel').yRadius;
   
 });
@@ -123,7 +123,7 @@ $(function () {
     $('#showcase').data('carousel').xRadius = $('#showcase').width() / 2;
     $('#showcase').data('carousel').xOrigin = $('#showcase').width() * 0.5;
     $('#showcase').data('carousel').yOrigin = $('#showcase').height() * 0.1;
-    $('#showcase').data('carousel').yRadius = $('#showcase').height() / 2.8;
+    $('#showcase').data('carousel').yRadius = maxHei * 0.85; //$('#showcase').height() / 2.8;
 
 
         title.text(carousel.nearestItem().element.alt);
@@ -138,20 +138,20 @@ $(function () {
         //helpToResize(docWidth);
 
 
-        if (docWidth <= 1200 && docWidth > 500)
-            circleParam = docWidth * 0.2;
-        else if (docWidth <= 600)
+        if (docWidth <= 850 && docWidth > 600)
             circleParam = docWidth * 0.3;
+        else if (docWidth <= 600)
+            circleParam = docWidth * 0.35;
 
         for (var i = 1; i < 15; i++) {
             var index = document.getElementById(i).style.zIndex;
             var pad = $('#showcase').css('padding-top');
             if (index === '100') {
                 if(k == i) {
-                    $('.logoin').css('top', maxHei / 4.5 + parseInt(pad));
+                    $('.logoin').css('top', maxHei / 3.5 + parseInt(pad));
                 }
                 if(k != i) {
-                    $('.logoin').css('top', maxHei / 2 + parseInt(pad));
+                    $('.logoin').css('top', maxHei / 2.5 + parseInt(pad));
                 }
                 $('#' + i).animate({'width': circleParam, 'height': circleParam}, 500);
                 $('#' + 'p' + i).fadeIn(500);
