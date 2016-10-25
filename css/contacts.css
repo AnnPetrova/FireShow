@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+@font-face {
+    font-family: inglobal;
+    src: url(../Font/TTF/inglobal.ttf);
+}
+
+.content {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.item {
+    color: white;
+    text-align: justify;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.22);
+    margin: 1% 0 1%;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.send-button-div {
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+
+* + .btn-wr {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#contact-form textarea {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 24px;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 20.5px 12px 20.5px;
+    background-color: rgba(212, 212, 212, 0.75);
+    border: 0.5px solid #cc4a52;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    -webkit-appearance: none;
+    resize: none;
+    height: 148px;
+    overflow: auto;
+}
+
+.label-div {
+    margin-top: 20px;
+}
+
+.input-div {
+    margin-top: 20px;
+}
+
+.form-control {
+    color: #333;
+    background-color: rgba(212, 212, 212, 0.75);
+    border: 0.5px solid #cc4a52;
+    height: 40px;
+    width: 200px;
+}
+
+#contact-form label {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+
+label.message {
+    width: 90%;
+    display: block;
+    padding: 10px 0px 0px 15px;
+}
+
+#contact-form .empty-message, #contact-form .error-message {
+    -moz-transition: 0.3s ease-in height;
+    -webkit-transition: 0.3s ease-in height;
+    -o-transition: 0.3s ease-in height;
+    transition: 0.3s ease-in height;
+    position: absolute;
+    right: 3px;
+    top: 2px;
+    color: red;
+    height: 0;
+    overflow: hidden;
+    font-size: 11px;
+    z-index: 99;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: rgba(222, 17, 0, 0.85);
+    border: none;
+    font-size: 20px;
+}
+
+.container {
+    width: 60%;
+}
+
+@media (max-width: 990px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+}

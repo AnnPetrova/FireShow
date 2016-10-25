@@ -1,17 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 
-.item{
-    font-family: Calibri;
-    font-size: 16px;
-    text-align: justify;
-}
-body {
-    background-image: url(../images/Download-fire-wallpaper-HD-backgrounds.jpg);
-    background-size: cover;
+@font-face {
+    font-family: inglobal;
+    src: url(../Font/TTF/inglobal.ttf);
 }
 
+p{
+    text-indent: 20px;
+}
+
+.item{
+    font-family: inherit;
+    font-size: 18px;
+    text-align: justify;
+}
 .news {
     background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+a{
     color: white;
 }
 
@@ -38,10 +46,8 @@ body {
 
 .article{
     text-align: left;
-    font-size: 22px;
-    text-decoration: underline;
+    font-size: 24px;
     padding: 15px;
-    text-decoration-color: #de1100;
 }
 
 .newsElement{

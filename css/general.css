@@ -1,3 +1,7 @@
+@font-face {
+    font-family: inglobal;
+    src: url(../Font/TTF/inglobal.ttf);
+}
 
 footer {
     background-color: rgba(0, 0, 0, 0.75);
@@ -10,7 +14,12 @@ footer {
     color: white;
     font-size: 18px;
     font-weight: 100;
-    font-family: Calibri;
+}
+
+body {
+    background-image: url(../images/Download-fire-wallpaper-HD-backgrounds.jpg);
+    background-size: cover;
+    font-family: inglobal;
 }
 
 ul {
@@ -24,16 +33,19 @@ ul {
     top: 80px;
     margin: auto;
     margin-bottom: 30px;
-    border-radius: 50px;
+    border-radius: 30px;
+   /* border: white solid 2px;*/
     font-size: 25px;
     text-align: center;
     width: 40px;
     height: 40px;
     display: block;
     cursor: pointer;
-    color: #de1100;
+    color: #ffffff;
     line-height: 40px;
-    background: rgb(255, 255, 255);
+    /*background: rgb(255, 255, 255);*/
+    background-image: url(../images/fire.png);
+    background-size: cover;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
@@ -42,8 +54,10 @@ ul {
 }
 
 #donebut:hover {
-    color: rgb(0, 0, 0);
-    background: rgba(255, 255, 255, 0.5);
+    color: rgb(35, 35, 35);
+  /*  background: rgba(255, 255, 255, 0.5);*/
+    background-image: url(../images/fire.png);
+    background-size: cover;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
@@ -69,16 +83,20 @@ ul {
 
 .dropdown-menu {
     background-color: rgba(222, 17, 0, 0.85);
-    color: #ffffff;
     border: 0;
 }
 
 .dropdown-menu li {
     padding-top: 5px;
     padding-bottom: 5px;
+    color: #ffffff;
 }
 
 .dropdown-menu > li > a {
+    color: #ffffff;
+}
+
+.dropdown-menu a {
     color: #ffffff;
 }
 
@@ -91,4 +109,8 @@ ul {
 .dropdown-menu {
     background-color: rgba(0, 0, 0, 0.7);
     border: 0;
+    color: #ffffff;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
 }

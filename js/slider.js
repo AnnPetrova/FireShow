@@ -1,22 +1,29 @@
-$(window).resize(function () {
-    var docWidth = $(document).width();
-    //var h = showcase.Cloud9Carousel.yRadius;
-    //console.log(h);
+var k;
+var maxHei = $('#t4').height();
 
-    //var h = parseInt($('#showcase').height()) - parseInt($("#showcase").css('padding-top'));
-    //var h2 = (h / 2);
-    
+$(window).resize(function () {
+    //var docWidth = $(document).width();
     //helpToResize(docWidth);
+    
+    for (var i = 1; i < 15; i++) {
+        if ($('#t' + i).height() >= maxHei) {
+            maxHei = $('#t' + i).height();
+            k = i;
+        }
+    }
+    //console.log(maxHei);
+    //console.log(k);
+    
     $('#showcase').data('carousel').xRadius = $('#showcase').width() / 2;
     $('#showcase').data('carousel').xOrigin = $('#showcase').width() * 0.5;
     $('#showcase').data('carousel').yOrigin = $('#showcase').height() * 0.1;
-    $('#showcase').data('carousel').yRadius = $('#showcase').height() / 6;
-    var h = $('#showcase').data('carousel').yRadius;
-    $('.logoin').css('top', h);
+    $('#showcase').data('carousel').yRadius = $('#showcase').height() / 2.8;
+    //var h = $('#showcase').data('carousel').yRadius;
+  
 });
 
 /*function helpToResize(docWidth){
-    var maxHei = $('#t3').height();
+    var maxHei = $('#t1').height();
     var circlePar = 0.85;
     var topParam = 0.7;
 
@@ -27,9 +34,9 @@ $(window).resize(function () {
             k = i;
         }
     }
-    $('#showcase').css('padding-top', (maxHei * 0.45));
+    //$('#showcase').css('padding-top', (maxHei * 0.45));
 
-    $('#showcase').height(maxHei + 350);
+    //$('#showcase').height(maxHei + 350);
 
     if (docWidth <= 1200 && docWidth > 1000) {
         circlePar = 0.55;
@@ -61,12 +68,13 @@ $(window).resize(function () {
     }
 
 //    $('#showcase').css('padding-top', (maxHei * 0.45));
-    $('.logoin').css('top', maxHei * topParam);
+    //console.log(maxHei);
+    $('.logoin').css('top', maxHei / 2);
 
     $('#showcase').data('carousel').xRadius = $('#showcase').width() / 2;
     $('#showcase').data('carousel').xOrigin = $('#showcase').width() * 0.5;
     $('#showcase').data('carousel').yOrigin = $('#showcase').height() * 0.1;
-    $('#showcase').data('carousel').yRadius = maxHei * circlePar;
+    $('#showcase').data('carousel').yRadius = maxHei;
 }*/
 
 $(function () {
@@ -84,7 +92,7 @@ $(function () {
          },*/
         buttonLeft: $("#nav > .left"),
         buttonRight: $("#nav > .right"),
-        autoPlay: 1,
+        autoPlay: 0,
         autoPlayDelay: 1500,
         bringToFront: true,
         onRendered: rendered,
@@ -97,12 +105,24 @@ $(function () {
     })
     function rendered(carousel) {
 
-    $('#showcase').data('carousel').xRadius = $('#showcase').width() / 2;
+    /*$('#showcase').data('carousel').xRadius = $('#showcase').width() / 2;
     $('#showcase').data('carousel').xOrigin = $('#showcase').width() * 0.5;
     $('#showcase').data('carousel').yOrigin = $('#showcase').height() * 0.1;
     $('#showcase').data('carousel').yRadius = $('#showcase').height() / 6;
     var h = $('#showcase').data('carousel').yRadius;
-    $('.logoin').css('top', h);
+    $('.logoin').css('top', h);*/
+
+    for (var i = 1; i < 15; i++) {
+        if ($('#t' + i).height() >= maxHei) {
+            maxHei = $('#t' + i).height();
+            k = i;
+        }
+    }
+    
+    $('#showcase').data('carousel').xRadius = $('#showcase').width() / 2;
+    $('#showcase').data('carousel').xOrigin = $('#showcase').width() * 0.5;
+    $('#showcase').data('carousel').yOrigin = $('#showcase').height() * 0.1;
+    $('#showcase').data('carousel').yRadius = $('#showcase').height() / 2.8;
 
 
         title.text(carousel.nearestItem().element.alt);
@@ -117,14 +137,21 @@ $(function () {
         //helpToResize(docWidth);
 
 
-        if (docWidth <= 1200 && docWidth > 500)
+        /*if (docWidth <= 1200 && docWidth > 500)
             circleParam = docWidth * 0.2;
         else if (docWidth <= 600)
-            circleParam = docWidth * 0.3;
+            circleParam = docWidth * 0.3;*/
 
         for (var i = 1; i < 15; i++) {
             var index = document.getElementById(i).style.zIndex;
+            var pad = $('#showcase').css('padding-top');
             if (index === '100') {
+                if(k == i) {
+                    $('.logoin').css('top', maxHei / 5.5 + parseInt(pad));
+                }
+                if(k != i) {
+                    $('.logoin').css('top', maxHei / 3.5 + parseInt(pad));
+                }
                 $('#' + i).animate({'width': circleParam, 'height': circleParam}, 500);
                 $('#' + 'p' + i).fadeIn(500);
                 var str = document.getElementById('t' + i).innerHTML;

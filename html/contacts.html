@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../bootstrap-3.3.6-dist/css/bootstrap.css">
     <link href="../bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/show.css" rel="stylesheet">
+    <link href="../css/contacts.css" rel="stylesheet">
     <link href="../css/carouselStyle.css" rel="stylesheet">
     <link href="../css/general.css" rel="stylesheet">
     <!--<link rel="stylesheet" type="text/css"href="JQuery/jquery.background-video.css">-->
@@ -22,7 +22,7 @@
     <!--<script type="text/javascript" charset="utf-8" src="carouselScript.js"></script>-->
 </head>
 <body>
-<div>
+<header>
     <div class="container-fluid" id="Menu">
         <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-header">
@@ -57,7 +57,7 @@
             </div>
         </nav>
     </div>
-</div>
+</header>
 
 <!-- SLIDER -->
 
@@ -142,21 +142,98 @@
 
     </div>
     <!--<p id="item-title">&nbsp;</p>-->
-  <!--  <div id="nav" class="noselect">
-        <button class="left">
-            <i class="fa fa-angle-left fa-lg"></i>
-        </button>
-        <button class="right">
-            <i class="fa fa-angle-right fa-lg"></i>
-        </button>
-    </div>-->
+    <!--  <div id="nav" class="noselect">
+          <button class="left">
+              <i class="fa fa-angle-left fa-lg"></i>
+          </button>
+          <button class="right">
+              <i class="fa fa-angle-right fa-lg"></i>
+          </button>
+      </div>-->
 
 </div>
 
 <!-- content -->
-<div class="content" style="height: 1000px">
+<div class="content">
+    <div class="container">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item ">
+            <form id="contact-form" class='contact-form'>
+                <div id="up-div">
+                    <div>
+                        <ul style="left: 15px">
+                            <li style="clear: left">
+                                <div class="li-Div">
+                                    <div class="label-div col-lg-3">
+                                        <p>Имя:</p>
+                                    </div>
+                                    <div class="input-div col-lg-9">
+                                        <label class="name">
+                                            <input class="form-control" type="text" name="name"
+                                                   data-constraints="@Required"/>
+                                            <span class="empty-message">*Обязательное поле</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-Div">
+                                    <div class="label-div col-lg-3">
+                                        <p>E-mail:</p>
+                                    </div>
+                                    <div class="input-div col-lg-9">
+                                        <label class="email">
+                                            <input class="form-control" type="text" name="email"
+                                                   data-constraints="@Required @Email"/>
+                                            <span class="empty-message">*Обязательное поле</span>
+                                            <span class="error-message">*Некорректный e-mail</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="liDiv">
+                                    <div class="label-div col-lg-3">
+                                        <p>Сообщение:</p>
+                                    </div>
+                                    <label class="message">
+                                        <textarea class="form-control" name="message"></textarea>
+                                        <span class="empty-message">*Обязательное поле</span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn-wr text-primary send-button-div" style="clear: left">
+                    <a class="btn btn-danger sendMail" href="mailto:"
+                       data-type="submit">Отправить</a>
+                </div>
+            </form>
 
+            <!--<form class='contact-form'>-->
+                <!--<div class="contact-form-loader"></div>-->
+                <!--<fieldset>-->
+                <!--</fieldset>-->
+                <!--<div class="modal fade response-message">-->
+                    <!--<div class="modal-dialog">-->
+                        <!--<div class="modal-content">-->
+                            <!--<div class="modal-header">-->
+                                <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">-->
+                                    <!--&times;-->
+                                <!--</button>-->
+                                <!--<h4 class="modal-title">Modal title</h4>-->
+                            <!--</div>-->
+                            <!--<div class="modal-body">-->
+                                <!--Ваше письмо отправлено! С Вами скоро свяжутся.-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</form>-->
+        </div>
+    </div>
 </div>
+
 
 <script src="../JQuery/jquery.background-video.js"></script>
 <script src="../JQuery/jquery.reflection.js"></script>
