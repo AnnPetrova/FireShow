@@ -73,6 +73,10 @@ ul{
     .image{
         text-align: center;
         padding-bottom: 5px;
+        padding-left: 0;
+    }
+    .item{
+        padding-left: 0;
     }
 
 }
