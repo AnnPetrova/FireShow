@@ -8,3 +8,44 @@
 p{
     text-indent: 20px;
 }
+
+.item{
+    font-family: inherit;
+    font-size: 18px;
+    text-align: justify;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.container {
+    margin-top: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.titleArticle {
+    margin-top: 10%;
+    color: white;
+    text-align: center;
+    font-size: 26px;
+}
+
+.image{
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.text {
+    text-align: justify;
+    padding-top: 30px;
+}
+
+.article{
+    text-align: left;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.newsElement{
+    text-align: center;
+}

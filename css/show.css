@@ -5,21 +5,22 @@
     src: url(../Font/TTF/inglobal.ttf);
 }
 
-p{
+p {
     text-indent: 20px;
 }
 
-.item{
+.item {
     font-family: inherit;
     font-size: 18px;
     text-align: justify;
 }
+
 .news {
     background-color: rgba(0, 0, 0, 0.75);
     color: white;
 }
 
-a{
+a {
     color: white;
 }
 
@@ -36,20 +37,30 @@ a{
     font-size: 26px;
 }
 
-.image{
+.image {
     text-align: justify;
 }
 
-.text{
+.text {
     text-align: justify;
 }
 
-.article{
+.article {
     text-align: left;
     font-size: 24px;
     padding: 15px;
 }
 
-.newsElement{
+.newsElement {
     text-align: center;
+}
+
+.na4img p {
+    text-align: center;
+}
+
+@media (max-width: 990px) {
+    .na4img p {
+        text-align: left;
+    }
 }

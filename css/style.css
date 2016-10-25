@@ -86,6 +86,13 @@ ul {
     .titleNews {
         margin-left: 5%;
     }
+
+    ul {
+        padding:0;
+    }
+    .item{
+        width:50%
+    }
 }
 
 /*
