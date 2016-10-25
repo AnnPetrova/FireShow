@@ -46,12 +46,12 @@ $('.jquery-background-video').bgVideo({fadeIn: 2000});
 
 function mute1() {
     $('.jquery-background-video').prop("muted", "muted");
-    $('.mutBut').css("backgroundImage", 'url(kek1.png)');
+    $('.mutBut').css("backgroundImage", 'url(../images/kek1.png)');
 }
 
 function mute2() {
     $('.jquery-background-video').prop("muted", null);
-    $('.mutBut').css("backgroundImage", 'url(kek.png)'); 
+    $('.mutBut').css("backgroundImage", 'url(../images/kek.png)');
 }
 
 $(document).ready(function () {

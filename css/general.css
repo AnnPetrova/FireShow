@@ -69,6 +69,7 @@ ul {
     color: white;
     text-align: center;
     font-size: 26px;
+    width: 100%;
     background-color: rgba(0, 0, 0,0.75);
     border-radius: 5px;
     margin-left: 0;

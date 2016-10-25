@@ -204,7 +204,7 @@ ul {
 .jquery-background-video-pauseplay.pause:after {
     left: 10px;
 }
-/*
+
 .mutBut {
     background: url(../images/kek.png);
     background-size: 100%;
@@ -222,7 +222,7 @@ ul {
 .mutBut:active {
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5) inset,
     3px 3px 5px rgba(0, 0, 0, 0.5);
-}*/
+}
 
 @media screen and (max-width: 400px) {
 
