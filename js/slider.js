@@ -1,5 +1,5 @@
 var k;
-var maxHei = $('#t4').height();
+var maxHei = $('#t1').height();
 
 $(window).resize(function () {
     //var docWidth = $(document).width();
@@ -11,6 +11,7 @@ $(window).resize(function () {
             k = i;
         }
     }
+    //console.log($('#t4').height());
     //console.log(maxHei);
     //console.log(k);
     
@@ -92,7 +93,7 @@ $(function () {
          },*/
         buttonLeft: $("#nav > .left"),
         buttonRight: $("#nav > .right"),
-        autoPlay: 0,
+        autoPlay: 1,
         autoPlayDelay: 1500,
         bringToFront: true,
         onRendered: rendered,
@@ -137,25 +138,25 @@ $(function () {
         //helpToResize(docWidth);
 
 
-        /*if (docWidth <= 1200 && docWidth > 500)
+        if (docWidth <= 1200 && docWidth > 500)
             circleParam = docWidth * 0.2;
         else if (docWidth <= 600)
-            circleParam = docWidth * 0.3;*/
+            circleParam = docWidth * 0.3;
 
         for (var i = 1; i < 15; i++) {
             var index = document.getElementById(i).style.zIndex;
             var pad = $('#showcase').css('padding-top');
             if (index === '100') {
                 if(k == i) {
-                    $('.logoin').css('top', maxHei / 5.5 + parseInt(pad));
+                    $('.logoin').css('top', maxHei / 4.5 + parseInt(pad));
                 }
                 if(k != i) {
-                    $('.logoin').css('top', maxHei / 3.5 + parseInt(pad));
+                    $('.logoin').css('top', maxHei / 2 + parseInt(pad));
                 }
                 $('#' + i).animate({'width': circleParam, 'height': circleParam}, 500);
                 $('#' + 'p' + i).fadeIn(500);
                 var str = document.getElementById('t' + i).innerHTML;
-                $('#kekylya').text(str);
+                $('.logoin').html(str);
                 $('#' + 'blur' + i).animate({'width': circleParam, 'height': circleParam});
                 $('#' + 'blur' + i).fadeIn(300);
 

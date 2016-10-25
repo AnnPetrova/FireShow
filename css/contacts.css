@@ -10,12 +10,16 @@
     text-align: center;
 }
 
+.contacts {
+    left: 15px;
+}
+
 .item {
     color: white;
     text-align: justify;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.22);
-    margin: 1% 0 1%;
+    margin: 3% 0 3%;
     border-radius: 5px;
     font-size: 20px;
 }
@@ -106,14 +110,28 @@ label.message {
     width: 60%;
 }
 
+@media (max-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+}
+
 @media (max-width: 990px) {
     .container {
         width: 100%;
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 450px) {
     .container {
-        width: 80%;
+        width: 100%;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    .form-control {
+        width: 100%;
     }
 }
