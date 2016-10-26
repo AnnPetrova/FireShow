@@ -24,8 +24,13 @@ a {
     color: white;
 }
 
+.content{
+    margin-top: 10%;
+}
+
 .container {
     margin-top: 30px;
+    margin-bottom: 30px;
     color: white;
     background-color: rgba(0, 0, 0, 0.75);
 }
@@ -55,8 +60,10 @@ a {
     text-align: center;
 }
 
-.na4img p {
-    text-align: center;
+.na4img li{
+    text-align: left;
+    padding-bottom: 30px;
+    padding-top: 10px;
 }
 
 @media (max-width: 990px) {

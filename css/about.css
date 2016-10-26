@@ -5,16 +5,15 @@
     src: url(../Font/TTF/inglobal.ttf);
 }
 
-p{
+p {
     text-indent: 20px;
 }
 
-.item{
+.item {
     font-family: inherit;
     font-size: 18px;
     text-align: justify;
     padding-bottom: 20px;
-    padding-top: 20px;
 }
 
 .container {
@@ -23,14 +22,17 @@ p{
     background-color: rgba(0, 0, 0, 0.75);
 }
 
-.titleArticle {
+.content {
     margin-top: 10%;
+}
+
+.titleArticle {
     color: white;
     text-align: center;
     font-size: 26px;
 }
 
-.image{
+.image {
     text-align: justify;
     padding-bottom: 20px;
 }
@@ -40,12 +42,12 @@ p{
     padding-top: 30px;
 }
 
-.article{
+.article {
     text-align: left;
     font-size: 20px;
     padding: 15px;
 }
 
-.newsElement{
+.newsElement {
     text-align: center;
 }
