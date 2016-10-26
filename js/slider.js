@@ -87,7 +87,7 @@ $(function () {
     showcase.Cloud9Carousel({
 
         mouseWheel: false,
-        fps: 100,
+        fps: 200,
         speed: 10,
         /*mirror: {
          gap: 12,
@@ -169,11 +169,11 @@ $(function () {
                 var str = document.getElementById('t' + i).innerHTML;
                 $('.logoin').html(str);
                 $('#' + 'blur' + i).animate({'width': circleParam, 'height': circleParam});
-                $('#' + 'blur' + i).fadeIn(300);
+               /* $('#' + 'blur' + i).fadeIn(300);*/
                 //var img = document.getElementById('b' + i).innerHTML;
-                $('body').css({'backgroundImage' : 'url(../images/' + 0 + i + '.jpg)'});
+                $('.keke').css({'backgroundImage' : 'url(../images/' + 0 + i + '.jpg)'});
                 /*$('body').animate({'opacity':'0'},600,function(){
-                    $(this).css({'backgroundImage' : 'url(../images/' + 0 + i + '.jpg)'});
+                    $(this).css({'backgroundImage' : 'url(../img/' + 0 + i + '.jpg)'});
                     $(this).animate({'opacity':'1'},600);
                 });*/
 
@@ -183,7 +183,7 @@ $(function () {
                         $('#' + j).animate({'width': circleParam * 0.7, 'height': circleParam * 0.7}, 500);
                         $('#' + 'p' + j).fadeOut(500);
                         $('#' + 'blur' + j).animate({'width': circleParam * 0.7, 'height': circleParam * 0.7});
-                        $('#' + 'blur' + j).fadeOut(300);
+                      /*  $('#' + 'blur' + j).fadeOut(300);*/
                     }
                 }
             }

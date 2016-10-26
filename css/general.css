@@ -17,12 +17,12 @@ footer {
 }
 
 body {
-    background-image: url(../images/03.jpg);
+    background-image: url(../images/07.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     font-family: inglobal;
-    background-color: black;
+    transition: 1s;
 }
 
 ul {
