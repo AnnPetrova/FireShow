@@ -17,12 +17,12 @@ footer {
 }
 
 body {
-    background-image: url(../images/Download-fire-wallpaper-HD-backgrounds.jpg);
+    background-image: url(../images/03.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     font-family: inglobal;
-    /*background-color: black;*/
+    background-color: black;
 }
 
 ul {
