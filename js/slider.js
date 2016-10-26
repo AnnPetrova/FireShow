@@ -1,5 +1,7 @@
 var k;
 var maxHei = $('#t1').height();
+var h, fH;
+
 
 $(window).resize(function () {
     //var docWidth = $(document).width();
@@ -125,7 +127,6 @@ $(function () {
     $('#showcase').data('carousel').yOrigin = $('#showcase').height() * 0.1;
     $('#showcase').data('carousel').yRadius = maxHei * 0.85; //$('#showcase').height() / 2.8;
 
-
         title.text(carousel.nearestItem().element.alt);
 
         // Fade in based on proximity of the item
@@ -133,15 +134,21 @@ $(function () {
         title.css('opacity', 0.5 + (0.5 * c));
 
         var docWidth = $(document).width();
-        var circleParam = 250;
+        var circleParam = 260;
 
         //helpToResize(docWidth);
 
 
-        if (docWidth <= 850 && docWidth > 600)
-            circleParam = docWidth * 0.3;
-        else if (docWidth <= 600)
-            circleParam = docWidth * 0.35;
+        if (docWidth <= 1000 && docWidth > 700) {
+            circleParam = docWidth * 0.28;
+            $('#showcase').data('carousel').yRadius = maxHei * 0.6;
+        } if (docWidth <= 700 && docWidth > 550) {
+            circleParam = docWidth * 0.33;
+            $('#showcase').data('carousel').yRadius = maxHei * 0.65;
+        } else if (docWidth <= 550){
+            circleParam = docWidth * 0.38;
+            $('#showcase').data('carousel').yRadius = maxHei * 0.7;
+        }
 
         for (var i = 1; i < 15; i++) {
             var index = document.getElementById(i).style.zIndex;
@@ -151,14 +158,25 @@ $(function () {
                     $('.logoin').css('top', maxHei / 3.5 + parseInt(pad));
                 }
                 if(k != i) {
-                    $('.logoin').css('top', maxHei / 2.5 + parseInt(pad));
+                    //$('.logoin').css('top', maxHei / 2.5 + parseInt(pad));
+                    h = $('#' + 't' + i).height();
+                    fH = (maxHei - h) / 1.7;
+                    $('.logoin').css('top', fH + parseInt(pad));
                 }
+                
                 $('#' + i).animate({'width': circleParam, 'height': circleParam}, 500);
                 $('#' + 'p' + i).fadeIn(500);
                 var str = document.getElementById('t' + i).innerHTML;
                 $('.logoin').html(str);
                 $('#' + 'blur' + i).animate({'width': circleParam, 'height': circleParam});
                 $('#' + 'blur' + i).fadeIn(300);
+                //var img = document.getElementById('b' + i).innerHTML;
+                $('body').css({'backgroundImage' : 'url(../images/' + 0 + i + '.jpg)'});
+                /*$('body').animate({'opacity':'0'},600,function(){
+                    $(this).css({'backgroundImage' : 'url(../images/' + 0 + i + '.jpg)'});
+                    $(this).animate({'opacity':'1'},600);
+                });*/
+
 
                 for (var j = 1; j < 15; j++) {
                     if (j !== i) {

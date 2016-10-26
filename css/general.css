@@ -19,19 +19,14 @@ footer {
 body {
     background-image: url(../images/Download-fire-wallpaper-HD-backgrounds.jpg);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: inglobal;
+    /*background-color: black;*/
 }
 
 ul {
     list-style: none;
-}
-
-.item a {
-    color: white;
-}
-
-.item a:hover {
-    color: #f72e39;
 }
 
 #donebut {
@@ -77,7 +72,6 @@ ul {
     color: white;
     text-align: center;
     font-size: 26px;
-    width: 100%;
     background-color: rgba(0, 0, 0,0.75);
     border-radius: 5px;
     margin-left: 0;
