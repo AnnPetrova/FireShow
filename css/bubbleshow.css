@@ -50,6 +50,17 @@ a {
     font-size: 26px;
 }
 
+.toContacts {
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+    font-size: 26px;
+}
+
+a:hover{
+    color: #b60000;
+}
+
 .image {
     text-align: justify;
 }
