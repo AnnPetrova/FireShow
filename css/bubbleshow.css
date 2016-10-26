@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+@font-face {
+    font-family: inglobal;
+    src: url(../Font/TTF/inglobal.ttf);
+}
+
+p {
+    text-indent: 20px;
+}
+
+.titleArticle a:hover{
+    text-decoration: blink;
+    color: #b60000;
+}
+
+.item {
+    font-family: inherit;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.news {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.whyUs li{
+    margin-top: 10px;
+}
+
+.whyUs{
+    padding-bottom: 20px;
+}
+
+.container {
+    margin-top: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.titleArticle {
+    margin-top: 10%;
+    color: white;
+    text-align: center;
+    font-size: 26px;
+}
+
+.image {
+    text-align: justify;
+}
+
+.text {
+    text-align: justify;
+}
+
+.article {
+    text-align: left;
+    font-size: 24px;
+    padding: 15px;
+}
+
+.newsElement {
+    text-align: center;
+}
+
+.na4img p {
+    text-align: center;
+}
+
+.video{
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media (max-width: 990px) {
+    .na4img p {
+        text-align: left;
+    }
+}
