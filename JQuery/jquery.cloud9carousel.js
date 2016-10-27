@@ -267,12 +267,12 @@
 
     this.enableAutoPlay = function() {
       // Stop auto-play on mouse over
-      $container.bind( /*'mouseover.cloud9',*/ function() {
+      $container.bind( 'mouseover.cloud9', function() {
         clearInterval( self.autoPlayTimer );
       } );
 
       // Resume auto-play when mouse leaves the container
-      $container.bind( /*'mouseout.cloud9', */function() {
+      $container.bind( 'mouseout.cloud9', function() {
         self.autoPlay();
       } );
 

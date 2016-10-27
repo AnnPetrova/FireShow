@@ -13,11 +13,44 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet'
           type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="../css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../css/slick-theme.css">
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .slider {
+            width: 50%;
+            margin: 100px auto;
+        }
+
+        .slick-slide {
+            margin: 0px 20px;
+        }
+
+        .slick-slide img {
+            width: 100%;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+        }
+    </style>
+
     <script src="../JQuery/jquery-3.1.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="../JQuery/tooltip.js"></script>
     <script src="../bootstrap-3.3.6-dist/js/bootstrap.js"></script>
     <script type="text/javascript" charset="utf-8" src="../js/script.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../js/index.js"></script>
     <!--<script type="text/javascript" charset="utf-8" src="carouselScript.js"></script>-->
 
 
@@ -300,24 +333,49 @@
         </ul>
     </div>
 
-    <div class="container" style="margin-top: 40px">
-        <div class="titleNews" style="margin-bottom: 30px ">
+    <div class="container" style="margin-top: 40px ;" >
+        <div class="titleNews" style="margin-bottom: 0">
             НАШИ КЛИЕНТЫ
         </div>
-        <ul class="clients">
-            <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <img src="../images/belavia.jpg" height="70px" width="250px">
-            </li>
-            <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <img src="../images/itra.jpg" height="70px" width="250px">
-            </li>
-            <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <img src="../images/urkas.jpg" height="70px" width="250px">
-            </li>
-        </ul>
     </div>
+
+
+    <section class="center slider responsive multiple-items" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+
+        <div>
+            <img src="../images/belavia.jpg" height="70px" width="250px">
+        </div>
+        <div>
+            <img src="../images/itra.jpg" height="70px" width="250px">
+        </div>
+        <div>
+            <img src="../images/urkas.jpg" height="70px" width="250px">
+        </div>
+        <div>
+            <img src="../images/bosch.jpg" height="70px" width="250px">
+        </div>
+        <div>
+            <img src="../images/a100.jpg" height="70px" width="250px">
+        </div>
+        <div>
+            <img src="../images/epam.png" height="70px" width="250px">
+        </div>
+        <div>
+            <img src="../images/mtb.jpg" height="70px" width="250px">
+        </div>
+        <div>
+            <img src="../images/techart.PNG" height="70px" width="250px">
+        </div>
+        <div>
+            <img src="../images/urkas.jpg" height="70px" width="250px">
+        </div>
+
+    </section>
+
 </div>
 
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="../js/slick.js" type="text/javascript" charset="utf-8"></script>
 
 <script src="../JQuery/jquery.background-video.js"></script>
 <script src="../JQuery/jquery.reflection.js"></script>

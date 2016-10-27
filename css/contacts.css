@@ -65,20 +65,22 @@
 }
 
 .form-control {
-    color: #333;
+    color: #ffffff;
     background-color: rgba(51, 51, 51, 0.72);
     /*border: 0.5px solid #cc4a52;*/
     border: 0;
     height: 40px;
     width: 250px;
+    cursor: text;
+    z-index: 999;
 }
 
-#contact-form label {
+/*#contact-form label {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     position: relative;
-}
+}*/
 
 label.message {
     width: 90%;

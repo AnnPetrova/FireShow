@@ -17,7 +17,7 @@ footer {
 }
 
 body {
-    background-image: url(../images/07.jpg);
+    background-image: url(../images/05.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -36,19 +36,21 @@ ul {
     top: 80px;
     margin: auto;
     margin-bottom: 30px;
-    border-radius: 30px;
+    border-radius: 5px;
+    padding-bottom: 10px;
    /* border: white solid 2px;*/
-    font-size: 40px;
+    font-size: 20px;
+    font-weight: 300;
     text-align: center;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 30px;
     display: block;
-    cursor: pointer;
-    color: #cf252a;
-    line-height: 40px;
+    cursor: text;
+    color: #000000;
+    /*line-height: 40px;*/
     /*background: rgb(255, 255, 255);*/
    /* background-image: url(../images/fire.png);*/
-    background-color: azure;
+    background-color: white;
     background-size: cover;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;

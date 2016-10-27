@@ -58,7 +58,7 @@ $('#donebut').click(function() {
     $('.content').animate({'opacity' : '1'}, 500);
     $('body').removeClass('keke');
 
-    /*$('body').css("backgroundImage", 'url(../images/07.jpg)');*/
+    $('body').css("backgroundImage", 'url(../images/07.jpg)');
 
   }
     return false;

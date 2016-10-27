@@ -223,7 +223,7 @@ ul {
     border: 0;
     cursor: pointer;
     outline: none;
-    position: absolute;
+    position: fixed;
     right: 15px;
     top: 60px;
 }
@@ -232,6 +232,15 @@ ul {
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5) inset,
     3px 3px 5px rgba(0, 0, 0, 0.5);
 }
+#partnersSliderList img{
+    width: 150px;
+}
+
+* + .offs1 {
+    margin-top: 70px;
+}
+
+
 
 @media screen and (max-width: 400px) {
 
