@@ -1,4 +1,27 @@
 /* Slider */
+
+.slider {
+    width: 75%;
+    margin: 50px auto;
+}
+
+.slider button{
+   display: none;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
 .slick-slider
 {
     position: relative;
