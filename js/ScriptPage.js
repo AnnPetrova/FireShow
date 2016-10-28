@@ -50,6 +50,7 @@ $('#donebut').click(function() {
     flag2 = false;
     $('.wrap1').animate({'opacity' : '1'}, 500);
     $('.content').animate({'opacity' : '0'}, 500);
+    $('.wrap1').getElementsByTagName('a').css('display', 'block');
     $('body').addClass('keke');
 
   } else {
@@ -58,7 +59,7 @@ $('#donebut').click(function() {
     $('.content').animate({'opacity' : '1'}, 500);
     $('body').removeClass('keke');
 
-    $('body').css("backgroundImage", 'url(../images/07.jpg)');
+    $('body').css("backgroundImage", 'url(../images/05.jpg)');
 
   }
     return false;

@@ -263,18 +263,29 @@
         function() { self.go( self.autoPlayAmount ) },
         this.autoPlayDelay
       );
+
+      //return this.autoPlay;
     }
 
     this.enableAutoPlay = function() {
       // Stop auto-play on mouse over
-      $container.bind(/*'mouseover.cloud9',*/ function() {
+      
+        $(".cloud9-item").hover(function(){
+          clearInterval( self.autoPlayTimer );
+      }, function(){
+        self.autoPlay();
+      });
+  
+  
+      
+      /*$container.bind('mouseover.cloud9',function() {
         clearInterval( self.autoPlayTimer );
       } );
 
       // Resume auto-play when mouse leaves the container
-      $container.bind( /*'mouseout.cloud9', */function() {
+      $container.bind( 'mouseout.cloud9', function() {
         self.autoPlay();
-      } );
+      } );*/
 
       this.autoPlay();
     }
@@ -386,4 +397,5 @@
       $(this).data( options.handle, new Carousel( this, options ) );
     } );
   }
+
 })( window.jQuery || window.Zepto );

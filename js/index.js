@@ -3,8 +3,8 @@ $(function () {
         $(".regular").slick({
             dots: true,
             infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 4,
+            slidesToScroll: 4,
             autoplay: true,
             autoplaySpeed: 1500,
             centerMode: true,
