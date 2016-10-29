@@ -48,6 +48,7 @@ a {
 
 .text {
     text-align: justify;
+    float: right;
 }
 
 .article {
@@ -70,4 +71,16 @@ a {
     .na4img p {
         text-align: left;
     }
+    .newsElement{
+        display: flex;
+    }
+    .image{
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    /*.element{*/
+        /*display: flex;*/
+    /*}*/
 }
