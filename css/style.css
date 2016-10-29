@@ -46,7 +46,7 @@ ul {
 .image {
     text-align: left;
     padding-bottom: 20px;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-right: 10px;
     margin-left: 0;
 }
@@ -67,10 +67,10 @@ ul {
 @media screen and (max-width: 1200px) {
 
     .text {
-        padding-left: 50px;
+        padding-left: 10px;
     }
 
-    .item {
+   .item {
         width: 100%;
     }
 
@@ -80,18 +80,20 @@ ul {
 }
 
 @media screen and (max-width: 990px) {
-    .text h3 {
-        font-size: 14px;
-    }
+
 
     .text {
         padding-left: 0px;
-        font-size: 12px;
     }
 
     .image {
         text-align: center;
         padding-left: 0;
+        padding-top: 15px;
+    }
+
+    .newsElement{
+        display: flex;
     }
 }
 
