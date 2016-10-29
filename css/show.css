@@ -24,7 +24,7 @@ a {
     color: white;
 }
 
-.content{
+.content {
     margin-top: 10%;
 }
 
@@ -46,11 +46,6 @@ a {
     text-align: justify;
 }
 
-.text {
-    text-align: justify;
-    float: right;
-}
-
 .article {
     text-align: left;
     font-size: 24px;
@@ -61,17 +56,22 @@ a {
     text-align: center;
 }
 
-.newsElement li{
-    text-align: center;
+.newsElement li {
+    text-align: justify;
 }
 
-.na4img li{
+.text {
+    text-align: justify;
+    float: right;
+}
+
+.na4img li {
     text-align: left;
     padding-bottom: 30px;
     padding-top: 10px;
 }
 
-.na4img p{
+.na4img p {
     text-indent: 0;
 }
 
@@ -79,16 +79,48 @@ a {
     .na4img p {
         text-align: left;
     }
-    .newsElement{
+
+    .newsElement {
         display: flex;
     }
-    .image{
+
+    .image {
         padding-top: 30px;
     }
 }
 
 @media (max-width: 700px) {
-    /*.element{*/
-        /*display: flex;*/
-    /*}*/
+    .col-xs-6 {
+        width: 100%;
+    }
+
+    .newsElement {
+        display: block;
+    }
+
+    .newsElement li .image {
+        text-align: center;
+    }
+
+    .col-sm-12 {
+        padding-left: 0;
+    }
+
+    .image {
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+
+    .image img {
+        width: 250px;
+    }
+
+    .na4img li, .na4img li p {
+        text-align: center;
+    }
+
+    .text {
+        text-align: justify;
+    }
 }
