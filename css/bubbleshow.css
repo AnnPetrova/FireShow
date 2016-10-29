@@ -99,3 +99,39 @@ a:hover{
         text-align: left;
     }
 }
+
+@media (max-width: 650px) {
+    .col-xs-6 {
+        width: 100%;
+    }
+
+    .newsElement {
+        display: block;
+    }
+
+    .newsElement li .image {
+        text-align: center;
+    }
+
+    .col-sm-12 {
+        padding-left: 0;
+    }
+
+    .image {
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+
+    .image img {
+        width: 250px;
+    }
+
+    .na4img li, .na4img li p {
+        text-align: center;
+    }
+
+    .text {
+        text-align: justify;
+    }
+}
