@@ -122,7 +122,7 @@ $(function () {
         }
     }
     
-    $('#showcase').data('carousel').xRadius = $('#showcase').width() / 2;
+    $('#showcase').data('carousel').xRadius = $('#showcase').width() / 2.2;
     $('#showcase').data('carousel').xOrigin = $('#showcase').width() * 0.5;
     $('#showcase').data('carousel').yOrigin = $('#showcase').height() * 0.1;
     $('#showcase').data('carousel').yRadius = maxHei * 0.85; //$('#showcase').height() / 2.8;
@@ -140,7 +140,7 @@ $(function () {
 
 
         if (docWidth <= 1000 && docWidth > 700) {
-            circleParam = docWidth * 0.28;
+            circleParam = docWidth * 0.26;
             $('#showcase').data('carousel').yRadius = maxHei * 0.6;
         } if (docWidth <= 700 && docWidth > 550) {
             circleParam = docWidth * 0.33;
@@ -155,7 +155,7 @@ $(function () {
             var pad = $('#showcase').css('padding-top');
             if (index === '100') {
                 if(k == i) {
-                    $('.logoin').css('top', maxHei / 3.5 + parseInt(pad));
+                    $('.logoin').css('top', maxHei / 4 + parseInt(pad));
                 }
                 if(k != i) {
                     //$('.logoin').css('top', maxHei / 2.5 + parseInt(pad));

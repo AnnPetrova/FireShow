@@ -61,10 +61,18 @@ a {
     text-align: center;
 }
 
+.newsElement li{
+    text-align: center;
+}
+
 .na4img li{
     text-align: left;
     padding-bottom: 30px;
     padding-top: 10px;
+}
+
+.na4img p{
+    text-indent: 0;
 }
 
 @media (max-width: 990px) {
