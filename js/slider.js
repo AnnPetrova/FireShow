@@ -20,7 +20,7 @@ $(window).resize(function () {
     $('#showcase').data('carousel').xRadius = $('#showcase').width() / 2;
     $('#showcase').data('carousel').xOrigin = $('#showcase').width() * 0.5;
     $('#showcase').data('carousel').yOrigin = $('#showcase').height() * 0.1;
-    $('#showcase').data('carousel').yRadius = maxHei * 0.85;
+    $('#showcase').data('carousel').yRadius = maxHei * 0.87;
     //var h = $('#showcase').data('carousel').yRadius;
 
     //FOR VIDEO
@@ -29,6 +29,7 @@ $(window).resize(function () {
     $('.jquery-background-video-wrapper').css({'height' : docHeight});
     $('.video-hero--content').css({'margin-top' : docHeight / 2});
     $('#downbut').css({'margin-top' : docHeight / 4.3});
+    //$('#showcase').css({'height' : docHeight});
   
 });
 
@@ -132,7 +133,7 @@ $(function () {
     $('#showcase').data('carousel').xRadius = $('#showcase').width() / 2.2;
     $('#showcase').data('carousel').xOrigin = $('#showcase').width() * 0.5;
     $('#showcase').data('carousel').yOrigin = $('#showcase').height() * 0.1;
-    $('#showcase').data('carousel').yRadius = maxHei * 0.85; //$('#showcase').height() / 2.8;
+    $('#showcase').data('carousel').yRadius = maxHei * 0.87; //$('#showcase').height() / 2.8;
 
         title.text(carousel.nearestItem().element.alt);
 
@@ -162,13 +163,11 @@ $(function () {
             var pad = $('#showcase').css('padding-top');
             if (index === '100') {
                 if(k == i) {
-                    $('.logoin').css('top', maxHei / 4.5 + parseInt(pad));
+                    $('.logoin').css('top', maxHei / 5 + parseInt(pad));
                 }
                 if(k != i) {
                     //$('.logoin').css('top', maxHei / 2.5 + parseInt(pad));
                     h = $('#' + 't' + i).height();
-
-                    fH = (maxHei - h) / 2;
                     fH = (maxHei - h) / 2.25;
                     $('.logoin').css('top', fH + parseInt(pad));
                 }
@@ -181,6 +180,7 @@ $(function () {
                /* $('#' + 'blur' + i).fadeIn(300);*/
                 //var img = document.getElementById('b' + i).innerHTML;
                 $('.keke').css({'backgroundImage' : 'url(../images/' + 0 + i + '.jpg)'});
+                $('.just_shake_that_ass').css({'backgroundImage' : 'url(../images/' + 0 + i + '.jpg)'});
                 /*$('body').animate({'opacity':'0'},600,function(){
                     $(this).css({'backgroundImage' : 'url(../img/' + 0 + i + '.jpg)'});
                     $(this).animate({'opacity':'1'},600);
