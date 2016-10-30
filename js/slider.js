@@ -28,8 +28,8 @@ $(window).resize(function () {
     var docHeight = $(window).height();
     $('.jquery-background-video-wrapper').css({'height' : docHeight});
     $('.video-hero--content').css({'margin-top' : docHeight / 2});
-    $('#downbut').css({'margin-top' : docHeight / 3});
-    //$('#showcase').css({'height' : docHeight});
+    //$('#downbut').css({'margin-top' : docHeight / 3});
+    //$('#showcase').css({'height' : docHeight + 70});
   
 });
 

@@ -298,8 +298,11 @@ ul {
 }
 
 #downbut {
-    position: relative;
+    position: absolute;
     margin: auto;
+    top: 84%;
+    left: 50%;
+    margin-left:-22.5px;
     border-radius: 50px;
     font-size: 25px;
     text-align: center;
