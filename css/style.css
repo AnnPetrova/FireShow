@@ -300,7 +300,7 @@ ul {
 #downbut {
     position: absolute;
     margin: auto;
-    top: 84%;
+    bottom: 15px;
     left: 50%;
     margin-left:-22.5px;
     border-radius: 50px;
