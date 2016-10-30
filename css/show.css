@@ -15,6 +15,16 @@ p {
     text-align: justify;
 }
 
+.item2 div {
+    text-align: left;
+    font-size: 18px;
+}
+
+.item2 img {
+    float: left;
+    margin-right: 10px;
+}
+
 .news {
     background-color: rgba(0, 0, 0, 0.75);
     color: white;
@@ -33,6 +43,7 @@ a {
     margin-bottom: 30px;
     color: white;
     background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
 }
 
 .titleArticle {
@@ -60,7 +71,7 @@ a {
     text-align: justify;
 }
 
-.element li p{
+.element li p {
     text-align: left;
     text-indent: 0;
 }
@@ -89,12 +100,16 @@ a {
         display: flex;
     }
 
-    ul{
+    ul {
         padding-left: 20px;
     }
 
     .image {
         padding-top: 30px;
+    }
+
+    .item2 img {
+        padding-top: 10px;
     }
 }
 
@@ -125,7 +140,7 @@ a {
         width: 250px;
     }
 
-    .na4img li, .na4img li p {
+    .element li p {
         text-align: center;
     }
 
