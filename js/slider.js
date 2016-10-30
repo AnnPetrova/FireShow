@@ -167,6 +167,8 @@ $(function () {
                 if(k != i) {
                     //$('.logoin').css('top', maxHei / 2.5 + parseInt(pad));
                     h = $('#' + 't' + i).height();
+
+                    fH = (maxHei - h) / 2;
                     fH = (maxHei - h) / 2.25;
                     $('.logoin').css('top', fH + parseInt(pad));
                 }

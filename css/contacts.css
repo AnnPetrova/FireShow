@@ -116,7 +116,16 @@ label.message {
 
 @media (max-width: 1200px) {
     .container {
-        width: 80%;
+        width: 90%;
+    }
+}
+
+@media (max-width: 620px) {
+    .col-xs-2 {
+        width: 100%;
+    }
+    .col-xs-10 {
+        width: 100%;
     }
 }
 
