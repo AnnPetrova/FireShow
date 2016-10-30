@@ -60,6 +60,11 @@ a {
     text-align: justify;
 }
 
+.element li p{
+    text-align: left;
+    text-indent: 0;
+}
+
 .text {
     text-align: justify;
     float: right;
@@ -84,12 +89,16 @@ a {
         display: flex;
     }
 
+    ul{
+        padding-left: 20px;
+    }
+
     .image {
         padding-top: 30px;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 590px) {
     .col-xs-6 {
         width: 100%;
     }
