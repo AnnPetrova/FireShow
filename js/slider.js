@@ -22,6 +22,13 @@ $(window).resize(function () {
     $('#showcase').data('carousel').yOrigin = $('#showcase').height() * 0.1;
     $('#showcase').data('carousel').yRadius = maxHei * 0.85;
     //var h = $('#showcase').data('carousel').yRadius;
+
+    //FOR VIDEO
+    
+    var docHeight = $(window).height();
+    $('.jquery-background-video-wrapper').css({'height' : docHeight});
+    $('.video-hero--content').css({'margin-top' : docHeight / 2});
+    $('#downbut').css({'margin-top' : docHeight / 4.3});
   
 });
 
@@ -155,12 +162,12 @@ $(function () {
             var pad = $('#showcase').css('padding-top');
             if (index === '100') {
                 if(k == i) {
-                    $('.logoin').css('top', maxHei / 4 + parseInt(pad));
+                    $('.logoin').css('top', maxHei / 4.5 + parseInt(pad));
                 }
                 if(k != i) {
                     //$('.logoin').css('top', maxHei / 2.5 + parseInt(pad));
                     h = $('#' + 't' + i).height();
-                    fH = (maxHei - h) / 1.7;
+                    fH = (maxHei - h) / 2.25;
                     $('.logoin').css('top', fH + parseInt(pad));
                 }
                 
