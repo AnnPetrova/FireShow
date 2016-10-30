@@ -1,24 +1,3 @@
-//$(window).resize(function () {
-//    var docWidth = $(document).width();
-//    if( docWidth<1201 && docWidth>990) {
-//        var maxHei = $('#block2').height();
-//        for (var i = 1; i < 5; i++) {
-//            if ($('#block' + i).height() > maxHei) {
-//                maxHei = $('#t' + i).height();
-//            }
-//        }
-//        console.log(maxHei);
-//       /* for (var i = 1; i < 5; i++) {*/
-//            $('.item').css('height', maxHei);
-//       // }
-//    }
-//   /* if( docWidth<990 && docWidth>650){
-//        $('.item' + i).css('height', maxHei);
-//    }
-//     else   if( docWidth<650)*/
-//
-//});
-
 
 var flag1 = new Boolean(true);
 var flag2 = new Boolean(true);
@@ -29,7 +8,7 @@ var main = function() {
 
 $('.jquery-background-video-wrapper').css({'height' : docHeight});
 $('.video-hero--content').css({'margin-top' : docHeight / 2});
-$('#downbut').css({'margin-top' : docHeight / 4.3});
+$('#downbut').css({'margin-top' : docHeight / 3});
 //$('#showcase').css({'height' : docHeight});
 
  $('#downbut').click( function(){ // ловим клик по ссылке с классом go_to

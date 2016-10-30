@@ -69,6 +69,16 @@ ul {
     text-align: center;
 }
 
+.textImage {
+    text-align: left;
+}
+
+.textImage img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
 @media screen and (min-width: 801px) {
 
     .text {
@@ -89,16 +99,17 @@ ul {
 
 @media screen and (max-width: 1150px) {
 
-    .text{
-     padding-left: 30px;
+    .text {
+        padding-left: 30px;
     }
 }
 
 @media screen and (max-width: 1300px) {
-    .item{
+    .item {
         text-align: left;
     }
-    .newsList li h3{
+
+    .newsList li h3 {
         font-size: 18px;
     }
 }
@@ -241,24 +252,27 @@ ul {
 }
 
 .mutBut {
+    opacity: 0.85;
     background: url(../images/kek.png);
     background-size: 100%;
     border-radius: 20px;
-    height: 35px;
-    width: 35px;
+    height: 45px;
+    width: 45px;
     border: 0;
     cursor: pointer;
     outline: none;
     position: fixed;
     right: 15px;
     top: 5px;
+    z-index: 1000000;
 }
 
 @media (max-width: 768px) {
     .mutBut {
         right: 0;
         left: 15px;
-        top: 10px
+        top: 5px;
+        z-index: 1000000000;
     }
 }
 
