@@ -26,6 +26,11 @@ body {
     min-width: 500px;
 }
 
+.keke {
+    overflow: hidden;
+}
+
+
 ul {
     list-style: none;
 }
