@@ -19,7 +19,7 @@ body {
 }
 
 .content {
-    margin-top: 15%;
+    margin-top: 80px;
 }
 
 ul {
@@ -87,12 +87,4 @@ ul {
 
 .container {
     color: white;
-}
-
-@media screen and (max-width: 400px) {
-
-    body {
-        width: 400px;
-    }
-
 }

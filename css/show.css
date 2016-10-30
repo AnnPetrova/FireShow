@@ -22,7 +22,7 @@ p {
 
 .item2 img {
     float: left;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .news {
@@ -35,7 +35,7 @@ a {
 }
 
 .content {
-    margin-top: 10%;
+    margin-top: 80px;
 }
 
 .container {
