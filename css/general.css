@@ -38,24 +38,20 @@ ul {
 #donebut {
     z-index: 990000000;
     position: fixed;
-    right: 20px;
-    top: 80px;
+    right: 0px;
     margin: auto;
-    border-radius: 5px;
-   /* border: white solid 2px;*/
     font-size: 25px;
     font-weight: 800;
     text-align: center;
-    min-width: 100px;
-    min-height: 27px;
+    min-width: 50px;
+    height: 100%;
     display: block;
     cursor: text;
     color: #000000;
-    /*line-height: 40px;*/
-    /*background: rgb(255, 255, 255);*/
-   /* background-image: url(../images/fire.png);*/
-    background-color: rgba(255,255,255, 0.7);
-    background-size: cover;
+    background-image: url(../images/prev.png);
+    background-position: center;
+    background-repeat: no-repeat;
+   /* background-size: cover;*/
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
@@ -63,11 +59,13 @@ ul {
     transition: all .2s ease-in-out;
 }
 
+.arrow{
+    top: 300px;
+}
+
 #donebut:hover {
     color: #ffffff;
-    background: rgba(255, 255, 255, 0.35);
-  /*  background-image: url(../images/fire.png);*/
-    background-size: cover;
+    background-image: url(../images/next.png);
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
