@@ -155,12 +155,12 @@ $(function () {
             var pad = $('#showcase').css('padding-top');
             if (index === '100') {
                 if(k == i) {
-                    $('.logoin').css('top', maxHei / 4 + parseInt(pad));
+                    $('.logoin').css('top', maxHei / 4.5 + parseInt(pad));
                 }
                 if(k != i) {
                     //$('.logoin').css('top', maxHei / 2.5 + parseInt(pad));
                     h = $('#' + 't' + i).height();
-                    fH = (maxHei - h) / 1.7;
+                    fH = (maxHei - h) / 2;
                     $('.logoin').css('top', fH + parseInt(pad));
                 }
                 
