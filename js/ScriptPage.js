@@ -37,6 +37,9 @@ var main = function () {
             flag2 = false;
             $('.wrap1').animate({'opacity': '1'}, 500);
             $('.content').animate({'opacity': '0'}, 500);
+            $('.wrap1').removeClass('animated fadeOutRight');
+            $('.wrap1').addClass('animated fadeInRight');
+
             //$('.wrap1').getElementsByTagName('a').css('display', 'block');
             $('body').addClass('keke');
             $('#donebut').css("backgroundImage", 'url(../images/next.png)');
@@ -50,6 +53,9 @@ var main = function () {
             if (!flag2) {
                 flag2 = true;
                 $('.wrap1').animate({'opacity': '0'}, 500);
+                $('.wrap1').removeClass('animated fadeInRight');
+                $('.wrap1').addClass('animated fadeOutRight');
+
                 $('.content').animate({'opacity': '1'}, 500);
                 $('body').removeClass('keke');
 
