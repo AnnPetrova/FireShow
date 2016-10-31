@@ -17,9 +17,14 @@ p {
     padding-bottom: 30px;
 }
 
-.newsElement li img{
-    text-align: center;
-    padding-top: 30px;
+.item div {
+    text-align: left;
+    font-size: 18px;
+}
+
+.item img {
+    float: left;
+    margin-right: 25px;
 }
 
 .content{
@@ -30,11 +35,6 @@ p {
     border-radius: 5px;
 }
 
-.news {
-    background-color: rgba(0, 0, 0, 0.75);
-    color: white;
-}
-
 a {
     color: white;
 }
@@ -43,41 +43,4 @@ a {
     margin-top: 30px;
     color: white;
     background-color: rgba(0, 0, 0, 0.75);
-}
-
-.titleArticle {
-    margin-top: 10%;
-    color: white;
-    text-align: center;
-    font-size: 26px;
-}
-
-.image {
-    text-align: justify;
-}
-
-.text {
-    text-align: justify;
-}
-
-.article {
-    text-align: left;
-    font-size: 24px;
-    padding: 15px;
-}
-
-.newsElement {
-    text-align: center;
-}
-
-.na4img p {
-    text-align: center;
-}
-
-@media (max-width: 990px) {
-    .newsElement li img{
-        text-align: center;
-        padding-top: 5px;
-        padding-bottom: 25px;
-    }
 }

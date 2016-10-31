@@ -68,7 +68,12 @@ a:hover{
 }
 
 .image {
-    text-align: justify;
+    text-align: center;
+}
+
+.image p{
+    text-indent: 0;
+    text-align: center;
 }
 
 .text {
