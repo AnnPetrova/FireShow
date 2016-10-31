@@ -2,91 +2,26 @@ var k;
 var maxHei = $('#t1').height();
 var h, fH;
 
-
 $(window).resize(function () {
-    //var docWidth = $(document).width();
-    //helpToResize(docWidth);
-    
     for (var i = 1; i < 15; i++) {
         if ($('#t' + i).height() >= maxHei) {
             maxHei = $('#t' + i).height();
             k = i;
         }
     }
-    //console.log($('#t4').height());
-    console.log(maxHei);
-    console.log(k);
-    
+
     $('#showcase').data('carousel').xRadius = $('#showcase').width() / 2;
     $('#showcase').data('carousel').xOrigin = $('#showcase').width() * 0.5;
     $('#showcase').data('carousel').yOrigin = $('#showcase').height() * 0.1;
     $('#showcase').data('carousel').yRadius = maxHei * 0.87;
-    //var h = $('#showcase').data('carousel').yRadius;
 
     //FOR VIDEO
     
     var docHeight = $(window).height();
     $('.jquery-background-video-wrapper').css({'height' : docHeight});
     $('.video-hero--content').css({'margin-top' : docHeight / 2});
-    //$('#downbut').css({'margin-top' : docHeight / 3});
-    //$('#showcase').css({'height' : docHeight + 70});
   
 });
-
-/*function helpToResize(docWidth){
-    var maxHei = $('#t1').height();
-    var circlePar = 0.85;
-    var topParam = 0.7;
-
-    var k = 1;
-    for (var i = 1; i < 15; i++) {
-        if ($('#t' + i).height() > maxHei) {
-            maxHei = $('#t' + i).height();
-            k = i;
-        }
-    }
-    //$('#showcase').css('padding-top', (maxHei * 0.45));
-
-    //$('#showcase').height(maxHei + 350);
-
-    if (docWidth <= 1200 && docWidth > 1000) {
-        circlePar = 0.55;
-        topParam = 0.75;
-    }
-    else if (docWidth > 800 && docWidth < 1000) {
-        circlePar = 0.45;
-        topParam = 0.35;
-        $('#showcase').css('padding-top', (maxHei * 0.2));
-        $('#showcase').height(maxHei + 150);
-    }
-    else if (docWidth >= 600 && docWidth < 800) {
-        circlePar = 0.43;
-        topParam = 0.39;
-        $('#showcase').css('padding-top', (maxHei * 0.2));
-        $('.logo').css('right', docWidth * 0.26);
-    }
-    else if (docWidth <= 1800 && docWidth > 1350) {
-        circlePar = 0.72;
-        topParam = 0.75;
-    }
-    else if (docWidth <= 2100 && docWidth > 1800) {
-        circlePar = 0.6;
-        topParam = 0.8;
-    }
-    else if (docWidth > 2100) {
-        circlePar = 0.6;
-        topParam = 0.8;
-    }
-
-//    $('#showcase').css('padding-top', (maxHei * 0.45));
-    //console.log(maxHei);
-    $('.logoin').css('top', maxHei / 2);
-
-    $('#showcase').data('carousel').xRadius = $('#showcase').width() / 2;
-    $('#showcase').data('carousel').xOrigin = $('#showcase').width() * 0.5;
-    $('#showcase').data('carousel').yOrigin = $('#showcase').height() * 0.1;
-    $('#showcase').data('carousel').yRadius = maxHei;
-}*/
 
 $(function () {
     var showcase = $("#showcase"), title = $('#item-title');
@@ -115,13 +50,6 @@ $(function () {
         }
     })
     function rendered(carousel) {
-
-    /*$('#showcase').data('carousel').xRadius = $('#showcase').width() / 2;
-    $('#showcase').data('carousel').xOrigin = $('#showcase').width() * 0.5;
-    $('#showcase').data('carousel').yOrigin = $('#showcase').height() * 0.1;
-    $('#showcase').data('carousel').yRadius = $('#showcase').height() / 6;
-    var h = $('#showcase').data('carousel').yRadius;
-    $('.logoin').css('top', h);*/
 
     for (var i = 1; i < 15; i++) {
         if ($('#t' + i).height() >= maxHei) {
