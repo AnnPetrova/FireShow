@@ -252,10 +252,9 @@ ul {
 }
 
 .mutBut {
-    opacity: 0.85;
     background: url(../images/kek.png);
     background-size: 100%;
-    border-radius: 20px;
+    border-radius: 30px;
     height: 45px;
     width: 45px;
     border: 0;
@@ -264,7 +263,7 @@ ul {
     position: fixed;
     right: 15px;
     top: 5px;
-    z-index: 1000000;
+    z-index: 1000000000;
 }
 
 @media (max-width: 768px) {
