@@ -9,6 +9,10 @@ p {
     text-indent: 20px;
 }
 
+.element{
+    padding: 0;
+}
+
 .item {
     font-family: inherit;
     font-size: 18px;
@@ -54,7 +58,7 @@ a {
 }
 
 .image {
-    text-align: justify;
+    text-align: center;
 }
 
 .article {
@@ -72,7 +76,7 @@ a {
 }
 
 .element li p {
-    text-align: left;
+    text-align: center;
     text-indent: 0;
 }
 
@@ -98,10 +102,6 @@ a {
 
     .newsElement {
         display: flex;
-    }
-
-    ul {
-        padding-left: 20px;
     }
 
     .image {
