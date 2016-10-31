@@ -39,6 +39,7 @@ var main = function () {
             $('.content').animate({'opacity': '0'}, 500);
             //$('.wrap1').getElementsByTagName('a').css('display', 'block');
             $('body').addClass('keke');
+            $('#donebut').css("backgroundImage", 'url(../images/next.png)');
 
             return false;
         })
@@ -53,6 +54,7 @@ var main = function () {
                 $('body').removeClass('keke');
 
                 $('body').css("backgroundImage", 'url(../images/05.jpg)');
+                $('#donebut').css("backgroundImage", 'url(../images/prev.png)');
 
             }
             return false;
