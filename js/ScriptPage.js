@@ -58,7 +58,7 @@ var main = function () {
                 $('.wrap1').addClass('animated fadeOutRight');
                 $('.wrap1').css({'z-index' : '0'});
 
-                $('.content').animate({'opacity': '1'}, 500);
+                $('.content').animate({'opacity': '1'}, 1000);
                 $('body').removeClass('keke');
 
                 $('body').css("backgroundImage", 'url(../images/05.jpg)');
